@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Scooter - Welcome to Scooter</title>
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/vendor/syntax.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="index">
+    <header class="sc-site__header">
+
+      <div class="sc-u-l-wrap">
+        <a href="index.html" class="sc-site__title">Scooter</a>
+      </div>
+
+    </header>
+
+    <nav class="sc-site__nav">
+      <div class="sc-u-l-wrap">
+        <ul class="sc-o-nav sc-o-nav--inline">
+          <li><a class="is-active" href="./">Home</a></li>
+          <li><a href="variables.html">Variables</a></li>
+          <li><a href="functions.html">Functions</a></li>
+          <li><a href="mixins.html">Mixins</a></li>
+          <li><a href="base.html">Base styles</a></li>
+          <li><a href="objects.html">Objects</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="utilities.html">Utilities</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="sc-site__content">
+      <div class="sc-u-l-wrap">
+        <div class="sc-o-grid">
+
+          <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
+            <h1>Welcome to Scooter</h1>
+            <p>Welcome to Scooter: an SCSS framework built to provide base styles, CSS
+components, and rapid static prototyping for Dropbox. The site navigation is
+structured to follow the same order as the framework itself.</p>
+
+<h2 id="css-authoring-guidelines">CSS Authoring Guidelines</h2>
+
+<p>This is purposefully ambitious and aspirational. Some concepts that are worth understanding in addition to the principles outlined here include:</p>
+
+<ul>
+<li><a href="http://www.stubbornella.org/content/2009/02/28/object-oriented-css-grids-on-github/">Object-Oriented CSS</a></li>
+<li><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM naming methodology</a></li>
+<li><a href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">CSS Namespacing</a></li>
+</ul>
+
+<p><a href="http://codepen.io/daneden/pen/78bb26fcc11e72f5aa24162c151d3626?editors=110">Here’s a CodePen</a> I’ll periodically update with the compiled CSS to use as a testing playground.</p>
+
+<h3 id="separation-of-concerns">Separation of Concerns</h3>
+
+<p>The overarching philosophy with Dropbox SCSS is a separation of concerns. Components should live as independently as possible. Overrides and conflicting rules should be avoided and negated by abstractions. For example:</p>
+<pre class="highlight scss"><code><span class="c1">// Bad code
+// HTML:
+// &lt;div class=“modal compact”&gt;&lt;/div&gt;
+</span><span class="nc">.modal</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">32px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nf">color</span><span class="p">(</span><span class="no">gray</span><span class="o">,</span> <span class="n">x-light</span><span class="p">);</span>
+
+  <span class="k">&amp;</span><span class="nc">.compact</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">23px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Good code
+// HTML:
+// &lt;div class=“o-modal u-l-island”&gt;&lt;/div&gt;
+// &lt;div class=“o-modal u-l-isle”&gt;&lt;/div&gt;
+</span>
+<span class="c1">// objects/_modal.scss
+</span><span class="nc">.o-modal</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nf">color</span><span class="p">(</span><span class="no">gray</span><span class="o">,</span> <span class="n">x-light</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// helpers/_layout.scss
+</span><span class="nc">.u-l-island</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">32px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.u-l-isle</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">23px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<h3 id="partials-and-organisation">Partials And Organisation</h3>
+
+<p>The typical SCSS file structure looks like this:</p>
+
+<ul>
+<li>File: <strong>global.scss</strong> (imports partial importers)</li>
+<li>Directory: <strong>partial/type name</strong> (e.g. “variables”)
+
+<ul>
+<li>File: <strong>__all.scss</strong> (imports siblings)</li>
+<li>File: <strong>_file.scss</strong> (self-contained, no imports)</li>
+</ul></li>
+</ul>
+
+<p>The double-underscoring of partial importers is twofold:</p>
+
+<ol>
+<li>It helps ensure that the importer is always the first file listed in file views, <code>ls</code>, etc.</li>
+<li>It’s extremely explicit in its function—easy to spot the double-underscore and know that its only task is to import siblings.</li>
+</ol>
+
+<h3 id="namespaced-classes">Namespaced Classes</h3>
+
+<p>Where possible, classes should be namespaced. This helps facilitate abstraction and style isolation, as well as assisting debugging and development.</p>
+<pre class="highlight scss"><code><span class="c1">// `.o-` for objects.
+// For example, in objects/_modal.scss:
+</span><span class="nc">.o-modal</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c1">// `.c-` for components
+// components/_buttons.scss
+</span><span class="nc">.c-btn</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c1">// `.u-` for utilities and helpers
+// helpers/_typography.scss
+</span><span class="nc">.u-font-small</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c1">// helpers/_layout.scss
+</span><span class="nc">.u-l-island</span> <span class="p">{</span> <span class="p">}</span>
+</code></pre>
+
+<h3 id="deference-to-variables">Deference to Variables</h3>
+
+<p>Unique and arbitrary colors and numbers should be avoided. Always favor defined units, functions, and variables.</p>
+<pre class="highlight scss"><code><span class="c1">// Bad code
+</span><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#007ee5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">23px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Good code
+</span><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nf">color</span><span class="p">(</span><span class="n">main</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="nv">$baseline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<h3 id="grouping-and-ordering-for-properties-and-nested-styles">Grouping And Ordering For Properties And Nested Styles</h3>
+
+<p>Properties are grouped and ordered like so:</p>
+
+<ol>
+<li>Layout and box-model properties</li>
+<li>Typographic properties</li>
+<li>Stylistic properties</li>
+<li>UI properties</li>
+<li>Pseudo-elements</li>
+<li>Pseudo-selectors</li>
+<li>Modifier classes</li>
+<li>Nested elements</li>
+</ol>
+
+<p>Here’s a fairly comprehensive example:</p>
+<pre class="highlight scss"><code><span class="nc">.c-btn</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">7px</span> <span class="m">12px</span><span class="p">;</span>
+
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+
+  <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">2px</span> <span class="nf">rgba</span><span class="p">(</span><span class="nf">color</span><span class="p">(</span><span class="n">main</span><span class="p">)</span><span class="o">,</span> <span class="mi">.3</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="si">#{</span><span class="o">&amp;</span><span class="si">}</span><span class="nt">--big</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">24px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="o">&gt;</span> <span class="nc">.c-icon</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<h3 id="unit-values">Unit Values</h3>
+
+<p>Always prefer a unitless ‘0’ to ‘none’ where applicable.</p>
+<pre class="highlight scss"><code><span class="c1">// Bad code
+</span><span class="nc">.u-l-trim</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Good code
+</span><span class="nc">.u-l-trim</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+          </div>
+
+          <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
+            <h4>On this page</h4>
+            <nav class="content__nav sc-o-nav">
+              <ul>
+<li>
+<a href="#css-authoring-guidelines">CSS Authoring Guidelines</a>
+</li>
+</ul>
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
