@@ -5,8 +5,10 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Scooter - Functions</title>
 
+    <link href="assets/css/vendor/scooter.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/vendor/syntax.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="functions">
@@ -39,7 +41,57 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
             <h1>Functions</h1>
-            
+            <h2 id="maths">Maths</h2>
+
+<h3 id="half($number)">half($number)</h3>
+
+<p>Divides a passed value by 2. Returns a whole number.</p>
+
+<h3 id="quarter($number)">quarter($number)</h3>
+
+<p>Divides a passed value by 4. Returns a whole number.</p>
+
+<h3 id="double($number)">double($number)</h3>
+
+<p>Multiplies a passed value by 2. Returns a whole number.</p>
+
+<h3 id="quadruple($number)">quadruple($number)</h3>
+
+<p>Multiplies a passed value by 4. Returns a whole number.</p>
+
+<h2 id="colors">Colors</h2>
+
+<h3 id="grayscale($gradation,-[$alpha:-1])">grayscale($gradation, [$alpha: 1])</h3>
+
+<p>Returns a value from <a href="variables.html#$dbgrayscalecolors"><code>$DBGrayscaleColors</code></a>.
+Passing an <code>$alpha</code> value between <code>0.0</code> and <code>1.0</code> returns the color as an
+<code>rgba</code> value.</p>
+
+<h3 id="color($name,-[$shade,-$alpha])">color($name, [$shade, $alpha])</h3>
+
+<p>Returns a value from <a href="variables.html#$dbglobalcolors"><code>$DBGlobalColors</code></a>. With
+only the <code>$name</code> parameter, the base shade is returned. The optional <code>$shade</code>
+parameter can be one of the following:</p>
+
+<ul>
+<li><code>x-dark</code></li>
+<li><code>dark</code></li>
+<li><code>base</code> (default)</li>
+<li><code>medium</code></li>
+<li><code>light</code></li>
+<li><code>x-light</code></li>
+</ul>
+
+<p>The optional <code>$alpha</code> parameter can be between <code>0.0</code> and <code>1.0</code>. Passing an
+<code>$alpha</code> value returns the color as an <code>rgba</code> value.</p>
+
+<h2 id="units">Units</h2>
+
+<h3 id="stripunit($value)">stripUnit($value)</h3>
+
+<p>Accepts a number and returns the unitless value. Useful for getting unitless
+versions of <code>em</code> values, for example.</p>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
@@ -47,7 +99,13 @@
             <nav class="content__nav sc-o-nav">
               <ul>
 <li>
-<a href="#title:-functions">title: Functions</a>
+<a href="#maths">Maths</a>
+</li>
+<li>
+<a href="#colors">Colors</a>
+</li>
+<li>
+<a href="#units">Units</a>
 </li>
 </ul>
 

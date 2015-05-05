@@ -5,8 +5,10 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Scooter - Variables</title>
 
+    <link href="assets/css/vendor/scooter.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/vendor/syntax.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="variables">
@@ -39,7 +41,34 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
             <h1>Variables</h1>
-            
+            <h2 id="colors">Colors</h2>
+
+<h3 id="$dbglobalcolors">$DBGlobalColors</h3>
+
+<p><code>$DBGlobalColors</code> is the variable for Dropbox&rsquo;s color palette. It&rsquo;s actually a
+Sass map containing white, black, and five distinct colors, each in five shades.</p>
+
+<p>It&rsquo;s not intended to be accessed or used directly, but instead via the <a href="functions.html#color($name,-[$shade,-$alpha])"><code>color</code>
+function</a>.</p>
+
+<h3 id="$dbgrayscalecolors">$DBGrayscaleColors</h3>
+
+<p><code>$DBGrayscaleColors</code> is a map of ten predefined gray colors. Again, it should
+not be accessed directly, but instead using the <a href="functions.html#grayscale($gradation,-[$alpha:-1])"><code>grayscale</code>
+function</a>.</p>
+
+<h2 id="units">Units</h2>
+
+<h3 id="$dbbaseline">$DBBaseline</h3>
+
+<p><code>$DBBaseline</code> is the baseline height for Scooter. Changing this variable changes
+the values for many components and utilities.</p>
+
+<h3 id="$dbfontsize">$DBFontSize</h3>
+
+<p><code>$DBFontSize</code> is the root element font size. Changing this unit affects font
+sizes across Scooter.</p>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
@@ -47,7 +76,10 @@
             <nav class="content__nav sc-o-nav">
               <ul>
 <li>
-<a href="#title:-variables">title: Variables</a>
+<a href="#colors">Colors</a>
+</li>
+<li>
+<a href="#units">Units</a>
 </li>
 </ul>
 
