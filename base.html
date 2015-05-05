@@ -5,10 +5,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Scooter - Base</title>
 
-    <link href="assets/css/vendor/scooter.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/vendor/syntax.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="base">
@@ -41,7 +42,59 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
             <h1>Base</h1>
-            
+            <h2 id="reset">Reset</h2>
+
+<p><code>base/reset</code> provides a simple CSS reset that removes margins and padding, sets
+<code>box-sizing</code>, and adds some basic margins to common content elements such as <code>p</code>
+and <code>ul</code>.</p>
+
+<h2 id="base">Base</h2>
+
+<p><code>base/base</code> sets styles for the <code>html</code> element, including font styles for the
+page.</p>
+
+<h2 id="typography">Typography</h2>
+
+<p><code>base/typography</code> sets default styles for typographic elements and adds classes
+for those styles. For example, if you want a piece of text to <em>look</em> like a <code>h1</code>
+wihout changing its semantic value, you can add a class of <code>f-alpha</code> to the
+element.</p>
+
+<div class='sc-demo'><div class='sc-demo__output'><h1>This is a level 1 heading</h1>
+
+<h2>A level 2 heading</h2>
+
+<h3>A level 3 heading</h3>
+
+<h4>A level 4 heading</h4>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph <a href="#">with a link</a>.</p>
+
+<hr/>
+
+<span class="f-alpha">This is a span with the appearance of h1</span>
+
+<span class="f-beta">This is a span with the appearance of h2</span></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;h1&gt;This is a level 1 heading&lt;/h1&gt;
+
+&lt;h2&gt;A level 2 heading&lt;/h2&gt;
+
+&lt;h3&gt;A level 3 heading&lt;/h3&gt;
+
+&lt;h4&gt;A level 4 heading&lt;/h4&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;p&gt;This is a paragraph &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;with a link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr/&gt;
+
+&lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"f-alpha"</span>&gt;This is a span with the appearance of h1&lt;/span&gt;
+
+&lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"f-beta"</span>&gt;This is a span with the appearance of h2&lt;/span&gt;</code></pre>
+</div></div>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
@@ -49,7 +102,13 @@
             <nav class="content__nav sc-o-nav">
               <ul>
 <li>
-<a href="#title:-base">title: Base</a>
+<a href="#reset">Reset</a>
+</li>
+<li>
+<a href="#base">Base</a>
+</li>
+<li>
+<a href="#typography">Typography</a>
 </li>
 </ul>
 

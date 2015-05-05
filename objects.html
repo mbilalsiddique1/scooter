@@ -5,10 +5,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Scooter - Objects</title>
 
-    <link href="assets/css/vendor/scooter.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/vendor/syntax.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="objects">
@@ -41,7 +42,81 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
             <h1>Objects</h1>
-            
+            <h2 id="grid">Grid</h2>
+
+<p>The grid object offers a collection of classes for grid-based layout. It should
+be used within a container that sets the width or max-width.</p>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>The grid object comes with a few configuration options:</p>
+
+<ul>
+<li><code>$DBcol-groups</code> is a map that sets the grid divisions. The default value is
+<code>2, 3, 4, 6, 12</code>.</li>
+<li><code>$DBgutter-width</code> sets the margins (or gutters) between columns. Defaults to 20px.</li>
+</ul>
+
+<div class='sc-demo'><div class='sc-demo__output'><div class="o-grid">
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+
+<p><div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div></p>
+
+<p><div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div></p>
+
+<p><div class="o-grid__col o-grid__col--6-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--3-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid&quot;</span>&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;</p>
+
+<p>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;</p>
+
+<p>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--6-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--3-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div></div></p>
+
+<h2 id="media">Media</h2>
+
+<h2 id="list-ui">List-UI</h2>
+
+<h2 id="flag">Flag</h2>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
@@ -49,7 +124,16 @@
             <nav class="content__nav sc-o-nav">
               <ul>
 <li>
-<a href="#title:-objects">title: Objects</a>
+<a href="#grid">Grid</a>
+</li>
+<li>
+<a href="#media">Media</a>
+</li>
+<li>
+<a href="#list-ui">List-UI</a>
+</li>
+<li>
+<a href="#flag">Flag</a>
 </li>
 </ul>
 

@@ -5,10 +5,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Scooter - Mixins</title>
 
-    <link href="assets/css/vendor/scooter.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/vendor/syntax.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="mixins">
@@ -41,7 +42,33 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
             <h1>Mixins</h1>
-            
+            <h2 id="properties">Properties</h2>
+
+<h3 id="share($property,-[$property...,]-$value)">share($property, [$property...,] $value)</h3>
+
+<p>Outputs multiple <code>$property</code> values with the same value. For example:</p>
+<pre class="highlight scss"><code><span class="c1">// Input:
+</span><span class="nt">share</span><span class="o">(</span><span class="nt">padding-top</span><span class="o">,</span> <span class="nt">padding-bottom</span><span class="o">,</span> <span class="nt">20px</span><span class="o">)</span><span class="p">;</span>
+
+<span class="c1">// Output:
+</span><span class="nl">padding-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+</code></pre>
+
+<h2 id="arrow">Arrow</h2>
+
+<h3 id="arrow($size:-10px,-$color:-inherit,-$direction:-down)">arrow($size: 10px, $color: inherit, $direction: down)</h3>
+
+<p>Makes a CSS arrow shape. <code>$direction</code> can be one of the following, and affects
+the direction the arrow points in:</p>
+
+<ul>
+<li>down (default)</li>
+<li>up</li>
+<li>left</li>
+<li>right</li>
+</ul>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
@@ -49,7 +76,10 @@
             <nav class="content__nav sc-o-nav">
               <ul>
 <li>
-<a href="#title:-mixins">title: Mixins</a>
+<a href="#properties">Properties</a>
+</li>
+<li>
+<a href="#arrow">Arrow</a>
 </li>
 </ul>
 
