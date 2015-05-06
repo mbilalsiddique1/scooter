@@ -40,9 +40,9 @@
       <div class="sc-u-l-wrap">
         <div class="sc-o-grid">
 
-          <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
+          <div class="sc-o-grid__col sc-o-grid__col--9-of-12">
             <h1>Objects</h1>
-            <h2>Grid</h2>
+            <h2 id="grid">Grid</h2>
 <p>The grid object offers a collection of classes for grid-based layout. It should
 be used within a container that sets the width or max-width.</p>
 
@@ -109,7 +109,7 @@ be used within a container that sets the width or max-width.</p>
 </div></div>
 </div>
 
-<h2>Media</h2>
+<h2 id="media">Media</h2>
 <p>The media object allows you to layout an image and a block of text beside one another.</p>
 
 <div class='sc-demo'><div class='sc-demo__output'><div class="o-media">
@@ -125,7 +125,7 @@ be used within a container that sets the width or max-width.</p>
 &lt;/div&gt;</code></pre>
 </div></div>
 
-<h2>List-UI</h2>
+<h2 id="list-ui">List-UI</h2>
 <p>The List-UI object turns a `ul` or `ol` element into an unstyled, vertically
 stacked list of navigation items. Using the `dividers` modifier also adds a
 divider between items.</p>
@@ -162,7 +162,7 @@ divider between items.</p>
 </div></div>
 
 
-<h2>Flag</h2>
+<h2 id="flag">Flag</h2>
 <p>The Flag object is very similar to the Media object, but allows you to control
   the vertical alignment of the text and image.</p>
 <p>By default, elements are vertically center-aligned. Add <code>top</code> or
@@ -229,11 +229,16 @@ divider between items.</p>
 
           </div>
 
-          <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
-            <h4>On this page</h4>
-            <nav class="content__nav sc-o-nav">
-
-            </nav>
+          <div class="sc-o-grid__col sc-o-grid__col--3-of-12">
+              <h4>On this page</h4>
+              <nav class="sc-content__nav sc-o-nav">
+                <ul>
+                    <li><a href="#grid">Grid</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#list-ui">List-UI</a></li>
+                    <li><a href="#flag">Flag</a></li>
+                </ul>
+              </nav>
           </div>
         </div>
       </div>
@@ -243,5 +248,7 @@ divider between items.</p>
         <a href="https://github.com/daneden/scooter">View on GitHub</a>.
       </div>
     </footer>
+
+    <script src="assets/js/all.js" type="text/javascript"></script>
   </body>
 </html>
