@@ -42,117 +42,129 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--8-of-12">
             <h1>Objects</h1>
-            <h2 id="grid">Grid</h2>
-
+            <h2>Grid</h2>
 <p>The grid object offers a collection of classes for grid-based layout. It should
 be used within a container that sets the width or max-width.</p>
 
-<h3 id="configuration">Configuration</h3>
-
+<h3>Configuration</h3>
 <p>The grid object comes with a few configuration options:</p>
 
 <ul>
-<li><code>$DBcol-groups</code> is a map that sets the grid divisions. The default value is
-<code>2, 3, 4, 6, 12</code>.</li>
-<li><code>$DBgutter-width</code> sets the margins (or gutters) between columns. Defaults to 20px.</li>
+  <li><code>$DBcol-groups</code> is a map that sets the grid divisions. The default value is <code>2, 3, 4, 6, 12</code>.</li>
+  <li><code>$DBgutter-width</code> sets the margins (or gutters) between columns. Defaults to 20px.</li>
 </ul>
 
 <div class='sc-demo'><div class='sc-demo__output'><div class="o-grid">
   <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
+  <div class="o-grid__col o-grid__col--1-of-12"></div>
 
-<p><div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div>
-  <div class="o-grid__col o-grid__col--1-of-12"></div></p>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
+  <div class="o-grid__col o-grid__col--2-of-12"></div>
 
-<p><div class="o-grid__col o-grid__col--2-of-12"></div>
-  <div class="o-grid__col o-grid__col--2-of-12"></div>
-  <div class="o-grid__col o-grid__col--2-of-12"></div>
-  <div class="o-grid__col o-grid__col--2-of-12"></div>
-  <div class="o-grid__col o-grid__col--2-of-12"></div>
-  <div class="o-grid__col o-grid__col--2-of-12"></div></p>
-
-<p><div class="o-grid__col o-grid__col--6-of-12"></div>
+  <div class="o-grid__col o-grid__col--6-of-12"></div>
   <div class="o-grid__col o-grid__col--2-of-12"></div>
   <div class="o-grid__col o-grid__col--3-of-12"></div>
   <div class="o-grid__col o-grid__col--1-of-12"></div>
-</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid&quot;</span>&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;</p>
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid"</span>&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
 
-<p>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;</p>
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
 
-<p>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--6-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--2-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--3-of-12&quot;</span>&gt;&lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-grid__col o-grid__col--1-of-12&quot;</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--6-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--2-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--3-of-12"</span>&gt;&lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-12"</span>&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-</div></div></p>
+</div></div>
 
-<h2 id="media">Media</h2>
-
-<p>The media object allows you to layout an image and a block of text beside one
-another.</p>
+<h2>Media</h2>
+<p>The media object allows you to layout an image and a block of text beside one another.</p>
 
 <div class='sc-demo'><div class='sc-demo__output'><div class="o-media">
-  <img class="o-media__img" src="http://lorempixel.com/64/64" />
+  <img class="o-media__img" src="http://placebear.com/64/64" alt="A photo of a bear" />
   <div class="o-media__body">
     <p>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam. Animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
   </div>
-
-<p></div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-media&quot;</span>&gt;
-  &lt;img <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-media__img&quot;</span> <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;http://lorempixel.com/64/64&quot;</span> /&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;o-media__body&quot;</span>&gt;
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media"</span>&gt;
+  &lt;img <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media__img"</span> <span class="nv">src</span><span class="o">=</span><span class="s2">"http://placebear.com/64/64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"A photo of a bear"</span> /&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media__body"</span>&gt;
     &lt;p&gt;Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui <span class="k">in </span>ea voluptate velit esse quam. Animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-</div></div></p>
+</div></div>
 
-<h2 id="list-ui">List-UI</h2>
+<h2>List-UI</h2>
+<p>The List-UI object turns a `ul` or `ol` element into an unstyled, vertically
+stacked list of navigation items. Using the `dividers` modifier also adds a
+divider between items.</p>
 
-<h2 id="flag">Flag</h2>
+<div class='sc-demo'><div class='sc-demo__output'><ul class="o-list-ui u-l-p">
+  <!-- The `u-l-p` class is just to add some space between these examples. -->
+  <li><a href="#">A menu item</a></li>
+  <li><a href="#">Another menu item</a></li>
+  <li><a href="#">A third menu item</a></li>
+  <li><a href="#">A final menu item</a></li>
+</ul>
+
+<ul class="o-list-ui o-list-ui--dividers">
+  <li><a href="#">A menu item</a></li>
+  <li><a href="#">Another menu item</a></li>
+  <li><a href="#">A third menu item</a></li>
+  <li><a href="#">A final menu item</a></li>
+</ul></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;ul <span class="nv">class</span><span class="o">=</span><span class="s2">"o-list-ui u-l-p"</span>&gt;
+  &lt;!-- The <span class="sb">`</span>u-l-p<span class="sb">`</span> class is just to add some space between these examples. --&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;A menu item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;Another menu item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;A third menu item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;A final menu item&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul <span class="nv">class</span><span class="o">=</span><span class="s2">"o-list-ui o-list-ui--dividers"</span>&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;A menu item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;Another menu item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;A third menu item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;A final menu item&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div></div>
+
+
+<h2>Flag</h2>
 
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--4-of-12">
             <h4>On this page</h4>
             <nav class="content__nav sc-o-nav">
-              <ul>
-<li>
-<a href="#grid">Grid</a>
-</li>
-<li>
-<a href="#media">Media</a>
-</li>
-<li>
-<a href="#list-ui">List-UI</a>
-</li>
-<li>
-<a href="#flag">Flag</a>
-</li>
-</ul>
 
             </nav>
           </div>
