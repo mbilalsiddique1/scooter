@@ -223,18 +223,35 @@
   <p>Inputs take up the entire width of their parent, so you can and should use them in the grid.</p>
 
   <div class="o-grid">
+
     <div class="o-grid__col o-grid__col--1-of-2">
       <label class="c-label">
         Password
         <input class="c-input" placeholder="Keep it secret." type="password" />
       </label>
     </div>
+
     <div class="o-grid__col o-grid__col--1-of-2">
       <label class="c-label">
         Confirm password
         <input class="c-input" placeholder="Keep it safe." type="password" />
       </label>
     </div>
+
+    <div class="o-grid__col o-grid__col--1-of-2">
+      <label class="c-label">
+        Disabled field
+        <input class="c-input" value="This is disabled" disabled />
+      </label>
+    </div>
+
+    <div class="o-grid__col o-grid__col--1-of-2">
+      <label class="c-label">
+        Textarea
+        <textarea class="c-input">Edit me, yo</textarea>
+      </label>
+    </div>
+
   </div>
 </form></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;form&gt;
   &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
@@ -245,18 +262,35 @@
   &lt;p&gt;Inputs take up the entire width of their parent, so you can and should use them <span class="k">in </span>the grid.&lt;/p&gt;
 
   &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid"</span>&gt;
+
     &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-2"</span>&gt;
       &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
         Password
         &lt;input <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"Keep it secret."</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"password"</span> /&gt;
       &lt;/label&gt;
     &lt;/div&gt;
+
     &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-2"</span>&gt;
       &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
         Confirm password
         &lt;input <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"Keep it safe."</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"password"</span> /&gt;
       &lt;/label&gt;
     &lt;/div&gt;
+
+    &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-2"</span>&gt;
+      &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
+        Disabled field
+        &lt;input <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input"</span> <span class="nv">value</span><span class="o">=</span><span class="s2">"This is disabled"</span> disabled /&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-2"</span>&gt;
+      &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
+        Textarea
+        &lt;textarea <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input"</span>&gt;Edit me, yo&lt;/textarea&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 </div></div>
