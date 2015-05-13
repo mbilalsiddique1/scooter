@@ -472,6 +472,128 @@
 &lt;/div&gt;</code></pre>
 </div></div>
 
+
+<h2 id="tokens">Tokens</h2>
+<p>Tokens are typically only used in the typeahead to display user identities
+  and emails. They come in three states: neutral, warning, and invalid. As well as
+  those states, a token may be in an additional "pending" state.</p>
+
+<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-token">
+  <figure class="c-avatar c-avatar--xs">
+    <img src="http://i.imgur.com/GoCxCU3.jpg" alt="Aaron Robbs" />
+  </figure>
+  <span class="c-token__name">Aaron Robbs</span>
+  <span class="c-token__delete">&times;</span>
+</div>
+
+<div class="c-token c-token--warning">
+  <figure class="c-avatar c-avatar--xs">
+    <img src="http://i.imgur.com/l2Gk1Q5.jpg" alt="Kristen Spilman" />
+  </figure>
+  <span class="c-token__name">Kristen Spilman</span>
+  <span class="c-token__delete">&times;</span>
+</div>
+
+<div class="c-token c-token--invalid">
+  <span class="c-token__name">dan.eden@</span>
+  <span class="c-token__delete">&times;</span>
+</div>
+
+<div class="c-token c-token--pending">
+  <figure class="c-avatar c-avatar--xs">
+    <img src="http://i.imgur.com/3DzNLJQ.jpg" alt="Ryhan Hassan" />
+  </figure>
+  <span class="c-token__name">Ryhan Hassan</span>
+  <span class="c-token__delete">&times;</span>
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token"</span>&gt;
+  &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/GoCxCU3.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Aaron Robbs"</span> /&gt;
+  &lt;/figure&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;Aaron Robbs&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--warning"</span>&gt;
+  &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/l2Gk1Q5.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Kristen Spilman"</span> /&gt;
+  &lt;/figure&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;Kristen Spilman&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--invalid"</span>&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;dan.eden@&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--pending"</span>&gt;
+  &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/3DzNLJQ.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Ryhan Hassan"</span> /&gt;
+  &lt;/figure&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;Ryhan Hassan&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div></div>
+
+<p>Tokens also have a selected state, triggered by JavaScript:</p>
+
+<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-token c-token--is-selected">
+  <figure class="c-avatar c-avatar--xs">
+    <img src="http://i.imgur.com/GoCxCU3.jpg" alt="Aaron Robbs" />
+  </figure>
+  <span class="c-token__name">Aaron Robbs</span>
+  <span class="c-token__delete">&times;</span>
+</div>
+
+<div class="c-token c-token--warning c-token--is-selected">
+  <figure class="c-avatar c-avatar--xs">
+    <img src="http://i.imgur.com/l2Gk1Q5.jpg" alt="Kristen Spilman" />
+  </figure>
+  <span class="c-token__name">Kristen Spilman</span>
+  <span class="c-token__delete">&times;</span>
+</div>
+
+<div class="c-token c-token--invalid c-token--is-selected">
+  <span class="c-token__name">dan.eden@</span>
+  <span class="c-token__delete">&times;</span>
+</div>
+
+<div class="c-token c-token--pending c-token--is-selected">
+  <figure class="c-avatar c-avatar--xs">
+    <img src="http://i.imgur.com/3DzNLJQ.jpg" alt="Ryhan Hassan" />
+  </figure>
+  <span class="c-token__name">Ryhan Hassan</span>
+  <span class="c-token__delete">&times;</span>
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--is-selected"</span>&gt;
+  &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/GoCxCU3.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Aaron Robbs"</span> /&gt;
+  &lt;/figure&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;Aaron Robbs&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--warning c-token--is-selected"</span>&gt;
+  &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/l2Gk1Q5.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Kristen Spilman"</span> /&gt;
+  &lt;/figure&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;Kristen Spilman&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--invalid c-token--is-selected"</span>&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;dan.eden@&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--pending c-token--is-selected"</span>&gt;
+  &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/3DzNLJQ.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Ryhan Hassan"</span> /&gt;
+  &lt;/figure&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;Ryhan Hassan&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div></div>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--3-of-12">
@@ -484,6 +606,8 @@
                     <li><a href="#inputs">Inputs</a></li>
                     <li><a href="#avatars">Avatars</a></li>
                     <li><a href="#modals">Modals</a></li>
+                    <li><a href="#title-bubble">Title-bubble</a></li>
+                    <li><a href="#tokens">Tokens</a></li>
                 </ul>
               </nav>
           </div>
