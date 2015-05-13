@@ -112,12 +112,12 @@ be used within a container that sets the width or max-width.</p>
 <p>The media object allows you to layout an image and a block of text beside one another.</p>
 
 <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="o-media">
-  <img class="o-media__img" src="http://placebear.com/64/64" alt="A photo of a bear" />
+  <img class="o-media__img" src="http://i.imgur.com/GoCxCU3.jpg" width="64" alt="Aaron Robbs" />
   <div class="o-media__body">
     <p>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam. Animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
   </div>
 </div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media"</span>&gt;
-  &lt;img <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media__img"</span> <span class="nv">src</span><span class="o">=</span><span class="s2">"http://placebear.com/64/64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"A photo of a bear"</span> /&gt;
+  &lt;img <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media__img"</span> <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/GoCxCU3.jpg"</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Aaron Robbs"</span> /&gt;
   &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-media__body"</span>&gt;
     &lt;p&gt;Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui <span class="k">in </span>ea voluptate velit esse quam. Animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&lt;/p&gt;
   &lt;/div&gt;
@@ -171,59 +171,67 @@ be used within a container that sets the width or max-width.</p>
 
 <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="o-flag u-l-p">
   <div class="o-flag__fix">
-    <img src="http://placebear.com/64/64" alt="A photo of a bear" />
+    <img src="http://i.imgur.com/l2Gk1Q5.jpg" width="64" alt="Kristen Spilman" />
   </div>
   <div class="o-flag__flex">
-    Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    This is a center-aligned flag object, the default state. Quia consequuntur magni dolores eos qui ratione voluptatem sequi&nbsp;nesciunt.
   </div>
 </div>
 
-<!-- The `top` modifier aligns the top edges of elements -->
-<div class="o-flag o-flag--top u-l-p">
-  <div class="o-flag__fix">
-    <img src="http://placebear.com/64/64" alt="A photo of a bear" />
-  </div>
-  <div class="o-flag__flex">
-    Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-  </div>
-</div>
+<hr/>
 
 <!-- The `rev` modifier lets you have a right-aligned fixed-width element -->
-<div class="o-flag o-flag--rev">
+<div class="o-flag o-flag--rev u-l-p">
   <div class="o-flag__flex">
-    Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    This is a reversed flag object. Quia consequuntur magni dolores eos qui ratione voluptatem sequi&nbsp;nesciunt.
   </div>
   <div class="o-flag__fix">
-    <img src="http://placebear.com/64/64" alt="A photo of a bear" />
+    <img src="http://i.imgur.com/txMlllW.jpg" width="64" alt="Linda Eliasen" />
   </div>
- </div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag u-l-p"</span>&gt;
+</div>
+
+<hr/>
+
+<!-- The `top` modifier aligns the top edges of elements -->
+<div class="o-flag o-flag--top">
+  <div class="o-flag__fix">
+    <img src="http://i.imgur.com/3DzNLJQ.jpg" width="64" alt="Ryhan Hassan" />
+  </div>
+  <div class="o-flag__flex">
+    This is a top-aligned flag object. Quia consequuntur magni dolores eos qui ratione voluptatem sequi&nbsp;nesciunt.
+  </div>
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag u-l-p"</span>&gt;
   &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__fix"</span>&gt;
-    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://placebear.com/64/64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"A photo of a bear"</span> /&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/l2Gk1Q5.jpg"</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Kristen Spilman"</span> /&gt;
   &lt;/div&gt;
   &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__flex"</span>&gt;
-    Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    This is a center-aligned flag object, the default state. Quia consequuntur magni dolores eos qui ratione voluptatem sequi&amp;nbsp;nesciunt.
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- The <span class="sb">`</span>top<span class="sb">`</span> modifier aligns the top edges of elements --&gt;
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag o-flag--top u-l-p"</span>&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__fix"</span>&gt;
-    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://placebear.com/64/64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"A photo of a bear"</span> /&gt;
-  &lt;/div&gt;
-  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__flex"</span>&gt;
-    Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr/&gt;
 
 &lt;!-- The <span class="sb">`</span>rev<span class="sb">`</span> modifier lets you have a right-aligned fixed-width element --&gt;
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag o-flag--rev"</span>&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag o-flag--rev u-l-p"</span>&gt;
   &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__flex"</span>&gt;
-    Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    This is a reversed flag object. Quia consequuntur magni dolores eos qui ratione voluptatem sequi&amp;nbsp;nesciunt.
   &lt;/div&gt;
   &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__fix"</span>&gt;
-    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://placebear.com/64/64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"A photo of a bear"</span> /&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/txMlllW.jpg"</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Linda Eliasen"</span> /&gt;
   &lt;/div&gt;
- &lt;/div&gt;</code></pre>
+&lt;/div&gt;
+
+&lt;hr/&gt;
+
+&lt;!-- The <span class="sb">`</span>top<span class="sb">`</span> modifier aligns the top edges of elements --&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag o-flag--top"</span>&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__fix"</span>&gt;
+    &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/3DzNLJQ.jpg"</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"64"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Ryhan Hassan"</span> /&gt;
+  &lt;/div&gt;
+  &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-flag__flex"</span>&gt;
+    This is a top-aligned flag object. Quia consequuntur magni dolores eos qui ratione voluptatem sequi&amp;nbsp;nesciunt.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div></div>
 
           </div>
