@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1" />
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Scooter - Utilities</title>
+    <title>Scooter - Utilities and Helpers</title>
 
     <link href="assets/css/demo.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -43,12 +43,46 @@
 
           <div class="sc-o-grid__col sc-o-grid__col--9-of-12">
             <header class="sc-content__header">
-              <h1>Utilities</h1>
+              <h1>Utilities and Helpers</h1>
+                <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/helpers'>View on GitHub</a>
             </header>
-            
+            <section class="sc-def">
+  <p>Utility classes are used for layout and font helpers, clearfixes, and other
+    helpful things.</p>
+</section>
+
+<section class="sc-def" id="clearfix">
+  <header class="sc-def__header">
+    <h2>Clearfix</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/helpers/_clearfix.scss'>View on GitHub</a>
+  </header>
+
+  <p>The clearfix helper is based on Thierry Koblentz's <a href="http://cssmojo.com/latest_new_clearfix_so_far/">
+      micro clearfix</a>. Use it to ensure that elements with floated children
+    correctly clear floats.</p>
+  <p>Either use the <code>clearfix</code> class in your markup or <code>@extend %clearfix</code>
+    in your SCSS.</p>
+</section>
+
+<section class="sc-def" id="layout">
+  <header class="sc-def__header">
+    <h2>Layout</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/helpers/_layout.scss'>View on GitHub</a>
+  </header>
+
+</section>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--3-of-12">
+              <h4>On this page</h4>
+              <nav class="sc-content__nav sc-o-nav">
+                <ul>
+                    <li><a href="#clearfix">Clearfix</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                </ul>
+              </nav>
           </div>
         </div>
       </div>
