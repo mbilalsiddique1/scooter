@@ -44,26 +44,34 @@
           <div class="sc-o-grid__col sc-o-grid__col--9-of-12">
             <header class="sc-content__header">
               <h1>Components</h1>
+                <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components'>View on GitHub</a>
             </header>
-            <p>Component classes are isolated, designed pieces of UI&mdash;things like buttons,
-  inputs, avatars, and whatnot. In Scooter, components are built in a way that
-  makes them relatively easy to restyle without breaking other parts of the CSS.</p>
+            <section class="sc-def">
+  <p>Component classes are isolated, designed pieces of UI&mdash;things like buttons,
+    inputs, avatars, and whatnot. In Scooter, components are built in a way that
+    makes them relatively easy to restyle without breaking other parts of the CSS.</p>
+</section>
 
-<h2 id="banners">Banners</h2>
-<p>Banners are used to display important information to the user. Typically,
-  they are pinned to the top of the page, but may also be detached or appear
-  anywhere in the page.</p>
+<section class="sc-def" id="banners">
+  <header class="sc-def__header">
+    <h2>Banners</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_banners.scss'>View on GitHub</a>
+  </header>
 
-<p>Banners come in four flavors:</p>
+  <p>Banners are used to display important information to the user. Typically,
+    they are pinned to the top of the page, but may also be detached or appear
+    anywhere in the page.</p>
 
-<ul>
-  <li>neutral</li>
-  <li>success</li>
-  <li>warning</li>
-  <li>error</li>
-</ul>
+  <p>Banners come in four flavors:</p>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-banner">
+  <ul>
+    <li>neutral</li>
+    <li>success</li>
+    <li>warning</li>
+    <li>error</li>
+  </ul>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-banner">
   This is a neutral banner.
 </div>
 
@@ -101,19 +109,25 @@
   This is a floating or <span class="s2">"unpinned"</span> banner.
 &lt;/div&gt;</code></pre>
 </div></div>
+</section>
 
-<h2 id="buttons">Buttons</h2>
-<p>Buttons come in three flavors:</p>
+<section class="sc-def" id="buttons">
+  <header class="sc-def__header">
+    <h2>Buttons</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_buttons.scss'>View on GitHub</a>
+  </header>
 
-<ul>
-  <li>primary</li>
-  <li>secondary</li>
-  <li>tertiary</li>
-</ul>
+  <p>Buttons come in three flavors:</p>
 
-<p>Buttons <strong>must</strong> use a modifier class to select a button type.</p>
+  <ul>
+    <li>primary</li>
+    <li>secondary</li>
+    <li>tertiary</li>
+  </ul>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><p>
+  <p>Buttons <strong>must</strong> use a modifier class to select a button type.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><p>
   <button class="c-btn c-btn--primary">Primary button</button>
   <button class="c-btn c-btn--secondary">Secondary button</button>
   <button class="c-btn c-btn--tertiary">Tertiary button</button>
@@ -133,26 +147,32 @@
   &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-btn c-btn--tertiary"</span> disabled&gt;Disabled tertiary button&lt;/button&gt;
 &lt;/p&gt;</code></pre>
 </div></div>
+</section>
 
-<h2 id="cards">Cards</h2>
-<p>Cards are used to display and contain all sorts of content. Places you see
-  cards today include the account dropdown menu and the "contact cards" in the
-  shared folder modals.</p>
+<section class="sc-def" id="cards">
+  <header class="sc-def__header">
+    <h2>Cards</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_cards.scss'>View on GitHub</a>
+  </header>
 
-<h3>Arrows</h3>
-<p>Cards can have arrow pointers attached to them with the `arrow` modifier. An
-  additional directional class can be added from the following:</p>
+  <p>Cards are used to display and contain all sorts of content. Places you see
+    cards today include the account dropdown menu and the "contact cards" in the
+    shared folder modals.</p>
 
-<ul>
-  <li><code>c-card--arrow-n</code> (default)</li>
-  <li><code>c-card--arrow-nw</code></li>
-  <li><code>c-card--arrow-ne</code></li>
-  <li><code>c-card--arrow-s</code></li>
-  <li><code>c-card--arrow-sw</code></li>
-  <li><code>c-card--arrow-se</code></li>
-</ul>
+  <h3>Arrows</h3>
+  <p>Cards can have arrow pointers attached to them with the `arrow` modifier. An
+    additional directional class can be added from the following:</p>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><p>
+  <ul>
+    <li><code>c-card--arrow-n</code> (default)</li>
+    <li><code>c-card--arrow-nw</code></li>
+    <li><code>c-card--arrow-ne</code></li>
+    <li><code>c-card--arrow-s</code></li>
+    <li><code>c-card--arrow-sw</code></li>
+    <li><code>c-card--arrow-se</code></li>
+  </ul>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><p>
   <div class="c-card">
     This is a card with come content.
   </div>
@@ -216,12 +236,17 @@
   &lt;/div&gt;
 &lt;/p&gt;</code></pre>
 </div></div>
+</section>
 
+<section class="sc-def" id="inputs">
+  <header class="sc-def__header">
+    <h2>Inputs and Labels</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_inputs.scss'>View on GitHub</a>
+  </header>
 
-<h2 id="inputs">Inputs and Labels</h2>
-<p>Inputs and labels are used in forms. But you knew that.</p>
+  <p>Inputs and labels are used in forms. But you knew that.</p>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><form>
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><form>
   <label class="c-label">
     Email address
     <input class="c-input" placeholder="drew@dropbox.com" />
@@ -301,20 +326,25 @@
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 </div></div>
+</section>
 
+<section class="sc-def" id="avatars">
+  <header class="sc-def__header" id="avatars">
+    <h2>Avatars</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_avatar.scss'>View on GitHub</a>
+  </header>
 
-<h2 id="avatars" >Avatars</h2>
-<p>Avatars come in five sizes:</p>
+  <p>Avatars come in five sizes:</p>
 
-<ul>
-  <li>xs (16px)</li>
-  <li>s (24px)</li>
-  <li>m (32px, default)</li>
-  <li>l (48px)</li>
-  <li>xl (64px)</li>
-</ul>
+  <ul>
+    <li>xs (16px)</li>
+    <li>s (24px)</li>
+    <li>m (32px, default)</li>
+    <li>l (48px)</li>
+    <li>xl (64px)</li>
+  </ul>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><figure class="c-avatar c-avatar--xl">
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><figure class="c-avatar c-avatar--xl">
   <img src="http://i.imgur.com/GoCxCU3.jpg" alt="Aaron Robbs" />
 </figure>
 
@@ -388,11 +418,15 @@
 
 <p><em>Note that in this example, the avatar color is set via JavaScript. By
     default, the color is set to <code>color(blue)</code>.</em></p>
+</section>
 
+<section id="modals" class="sc-def">
+  <header class="sc-def__header">
+    <h2>Modal</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_modal.scss'>View on GitHub</a>
+  </header>
 
-<h2 id="modal">Modal</h2>
-
-<div class='sc-demo sc-demo--modal'><div class='sc-demo__output'><div class="c-modal-overlay">
+  <div class='sc-demo sc-demo--modal'><div class='sc-demo__output'><div class="c-modal-overlay">
   <div class="c-modal">
     <div class="c-modal__header">
       <h2>Modal title</h2>
@@ -436,16 +470,20 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div></div>
+</section>
 
+<section class="sc-def" id="title-bubble">
+  <header class="sc-def__header">
+    <h2>Title Bubble</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_title-bubble.scss'>View on GitHub</a>
+  </header>
+  <p>The title bubble component is a tooltip-like component that appears on hover.
+    It's intended for non-vital information about a given element.</p>
+  <p>The title bubble requires that the element has a `data-title` attribute
+    containing the tooltip content. By default, the tooltip appears below the
+    element</p>
 
-<h2 id="title-bubble">Title Bubble</h2>
-<p>The title bubble component is a tooltip-like component that appears on hover.
-  It's intended for non-vital information about a given element.</p>
-<p>The title bubble requires that the element has a `data-title` attribute
-  containing the tooltip content. By default, the tooltip appears below the
-  element</p>
-
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="u-l-isle u-font-center">
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="u-l-isle u-font-center">
   <p class="c-title-bubble" data-title="This is a tooltip">Hover me</p>
 </div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-isle u-font-center"</span>&gt;
   &lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"c-title-bubble"</span> data-title<span class="o">=</span><span class="s2">"This is a tooltip"</span>&gt;Hover me&lt;/p&gt;
@@ -477,14 +515,19 @@
   &lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </div></div>
+</section>
 
+<section class="sc-def" id="tokens">
+  <header class="sc-def__header">
+    <h2>Tokens</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_tokens.scss'>View on GitHub</a>
+  </header>
 
-<h2 id="tokens">Tokens</h2>
-<p>Tokens are typically only used in the typeahead to display user identities
-  and emails. They come in three states: neutral, warning, and invalid. As well as
-  those states, a token may be in an additional "pending" state.</p>
+  <p>Tokens are typically only used in the typeahead to display user identities
+    and emails. They come in three states: neutral, warning, and invalid. As well as
+    those states, a token may be in an additional "pending" state.</p>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-token">
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-token">
   <figure class="c-avatar c-avatar--xs">
     <img src="http://i.imgur.com/GoCxCU3.jpg" alt="Aaron Robbs" />
   </figure>
@@ -599,14 +642,20 @@
   &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 </div></div>
+</section>
 
+<section id="loading-indicator" class="sc-def">
+  <header class="sc-def__header">
+    <h2>Loading Indicator</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_loading-indicator.scss'>View on GitHub</a>
+  </header>
 
-<h2 class="loading-indicator">Loading Indicator</h2>
-<p>The loading indicator component is a screenreader-friendly, left-aligned
-  loading animation. It's a really simple one-liner.</p>
+  <p>The loading indicator component is a screenreader-friendly, left-aligned
+    loading animation. It's a really simple one-liner.</p>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-loader">Loading...</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-loader"</span>&gt;Loading...&lt;/div&gt;</code></pre>
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-loader">Loading...</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-loader"</span>&gt;Loading...&lt;/div&gt;</code></pre>
 </div></div>
+</section>
 
           </div>
 
