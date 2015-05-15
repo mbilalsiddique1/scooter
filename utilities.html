@@ -70,7 +70,144 @@
     <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/helpers/_layout.scss'>View on GitHub</a>
   </header>
 
+  <h3>Padding (Islands)</h3>
+  <p>Padding helpers are known as "islands". Islands come in five types:</p>
+
+  <ul>
+    <li><strong>Islands</strong> have padding equal to the global baseline.</li>
+    <li><strong>Isles</strong> have padding half the size of the global baseline.</li>
+    <li><strong>Spits</strong> have padding half the size of <strong>isles</strong>.</li>
+    <li><strong>Countries</strong> have double the padding of <strong>islands</strong>.</li>
+    <li><strong>Continents</strong> have double the padding of <strong>countries</strong>.</li>
+  </ul>
+
+  <p>We're getting a little lost in the weeds here, so let's just look at some examples.
+  Note that the border and background color are only present for demonstration purposes.</p>
+
+  <div class='sc-demo sc-demo--padding'><div class='sc-demo__output'><p>
+  <span class="u-l-island">This is an island</span>
+</p>
+<p>
+  <span class="u-l-isle">This is an isle</span>
+</p>
+<p>
+  <span class="u-l-spit">This is a spit</span>
+</p>
+<p>
+  <span class="u-l-country">This is a country</span>
+</p>
+<p>
+  <span class="u-l-continent">This is a continent</span>
+</p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;p&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-island"</span>&gt;This is an island&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-isle"</span>&gt;This is an isle&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-spit"</span>&gt;This is a spit&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-country"</span>&gt;This is a country&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-continent"</span>&gt;This is a continent&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+</div></div>
+
+  <p>You can also add a <code>--v</code> modifier to any island to apply only vertical padding:</p>
+
+  <div class='sc-demo sc-demo--padding'><div class='sc-demo__output'><span class="u-l-island--v">This is an island</span></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-island--v"</span>&gt;This is an island&lt;/span&gt;</code></pre>
+</div></div>
+
+  <h3>Margins</h3>
+  <p>Use margin classes to add or remove margins to elements when they don't have any of their own.</p>
+
+  <p>The <code>p</code> in the margin helpers (<code>u-l-p</code> et al) indicates inheritence from
+    the bare <code>&lt;p&gt;</code> tag, which basically only has a margin applied to it.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="u-l-p">This has a margin-bottom equal to the baseline</div>
+
+<hr/>
+
+<div class="u-l-p--dbl">This has a double-height margin-bottom</div>
+
+<hr/>
+
+<div class="u-l-p--hlf">This has a half-height margin-bottom</div>
+
+<hr/>
+
+<p class="u-l-trim">This paragraph has been trimmed of its margin</p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-p"</span>&gt;This has a margin-bottom equal to the baseline&lt;/div&gt;
+
+&lt;hr/&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-p--dbl"</span>&gt;This has a double-height margin-bottom&lt;/div&gt;
+
+&lt;hr/&gt;
+
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-p--hlf"</span>&gt;This has a half-height margin-bottom&lt;/div&gt;
+
+&lt;hr/&gt;
+
+&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-trim"</span>&gt;This paragraph has been trimmed of its margin&lt;/p&gt;</code></pre>
+</div></div>
+
+  <h3>Floats</h3>
+  <p>You can float things left and right with ease. Don't forget to put floated
+    elements in a clearfix.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="clearfix">
+  <img class="u-l-fl" src="http://i.imgur.com/l2Gk1Q5.jpg" width="128" alt="Kristen Spilman" />
+  <img class="u-l-fr" src="http://i.imgur.com/0tRX9MO.jpg" width="128" alt="Daniel Eden" />
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"clearfix"</span>&gt;
+  &lt;img <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-fl"</span> <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/l2Gk1Q5.jpg"</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"128"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Kristen Spilman"</span> /&gt;
+  &lt;img <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-fr"</span> <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/0tRX9MO.jpg"</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"128"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Daniel Eden"</span> /&gt;
+&lt;/div&gt;</code></pre>
+</div></div>
+
+  <h3>Display helpers</h3>
+  <p>There are display helper classes available to change box-model behaviour of
+  elements.</p>
+
+  <ul>
+    <li><code>u-l-b</code> will set the element to <code>display: block;</code></li>
+    <li><code>u-l-ib</code> will set the element to <code>display: inline-block;</code>
+      <ul>
+        <li>There is an <code>--m</code> modifier available to set the element to
+          <code>vertical-align: middle;</code></li>
+      </ul>
+    </li>
+  </ul>
+
 </section>
+
+<section id="typography" class="sc-def">
+  <header class="sc-def__header">
+    <h2>Typography</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/helpers/_typography.scss'>View on GitHub</a>
+  </header>
+
+  <p>Use the typography helper classes to change text alignment, size, and color.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><p class="u-font-center">Center-aligned text</p>
+<hr/>
+<p class="u-font-left">Left-aligned text</p>
+<hr/>
+<p class="u-font-right">Right-aligned text</p>
+<hr/>
+<p class="u-font-small">Small text</p>
+<hr/>
+<p class="u-font-meta">De-emphasised or "meta" text</p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-font-center"</span>&gt;Center-aligned text&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-font-left"</span>&gt;Left-aligned text&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-font-right"</span>&gt;Right-aligned text&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-font-small"</span>&gt;Small text&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-font-meta"</span>&gt;De-emphasised or <span class="s2">"meta"</span> text&lt;/p&gt;</code></pre>
+</div></div>
 
           </div>
 
