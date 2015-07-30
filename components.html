@@ -305,6 +305,20 @@
       </label>
     </div>
 
+    <div class="o-grid__col o-grid__col--1-of-2">
+      <label class="c-label">
+        First name <span class="u-font-error">(Required)</span>
+        <input class="c-input is-invalid" type="text" />
+      </label>
+    </div>
+
+    <div class="o-grid__col o-grid__col--1-of-2">
+      <label class="c-label">
+        Last name
+        <input class="c-input is-valid" type="text" value="Housten" />
+      </label>
+    </div>
+
   </div>
 </form></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;form&gt;
   &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
@@ -341,6 +355,20 @@
       &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
         Textarea
         &lt;textarea <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input"</span>&gt;Edit me, yo&lt;/textarea&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-2"</span>&gt;
+      &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
+        First name &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-font-error"</span>&gt;<span class="o">(</span>Required<span class="o">)</span>&lt;/span&gt;
+        &lt;input <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input is-invalid"</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> /&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"o-grid__col o-grid__col--1-of-2"</span>&gt;
+      &lt;label <span class="nv">class</span><span class="o">=</span><span class="s2">"c-label"</span>&gt;
+        Last name
+        &lt;input <span class="nv">class</span><span class="o">=</span><span class="s2">"c-input is-valid"</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nv">value</span><span class="o">=</span><span class="s2">"Housten"</span> /&gt;
       &lt;/label&gt;
     &lt;/div&gt;
 
@@ -607,7 +635,7 @@
 
 <p>Tokens also have a selected state, triggered by JavaScript:</p>
 
-<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-token c-token--is-selected">
+<div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-token is-selected">
   <figure class="c-avatar c-avatar--xs">
     <img src="http://i.imgur.com/GoCxCU3.jpg" alt="Aaron Robbs" />
   </figure>
@@ -615,7 +643,7 @@
   <span class="c-token__delete">&times;</span>
 </div>
 
-<div class="c-token c-token--warning c-token--is-selected">
+<div class="c-token c-token--warning is-selected">
   <figure class="c-avatar c-avatar--xs">
     <img src="http://i.imgur.com/l2Gk1Q5.jpg" alt="Kristen Spilman" />
   </figure>
@@ -623,18 +651,18 @@
   <span class="c-token__delete">&times;</span>
 </div>
 
-<div class="c-token c-token--invalid c-token--is-selected">
+<div class="c-token c-token--invalid is-selected">
   <span class="c-token__name">dan.eden@</span>
   <span class="c-token__delete">&times;</span>
 </div>
 
-<div class="c-token c-token--pending c-token--is-selected">
+<div class="c-token c-token--pending is-selected">
   <figure class="c-avatar c-avatar--xs">
     <img src="http://i.imgur.com/3DzNLJQ.jpg" alt="Ryhan Hassan" />
   </figure>
   <span class="c-token__name">Ryhan Hassan</span>
   <span class="c-token__delete">&times;</span>
-</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--is-selected"</span>&gt;
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token is-selected"</span>&gt;
   &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
     &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/GoCxCU3.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Aaron Robbs"</span> /&gt;
   &lt;/figure&gt;
@@ -642,7 +670,7 @@
   &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--warning c-token--is-selected"</span>&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--warning is-selected"</span>&gt;
   &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
     &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/l2Gk1Q5.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Kristen Spilman"</span> /&gt;
   &lt;/figure&gt;
@@ -650,12 +678,12 @@
   &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--invalid c-token--is-selected"</span>&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--invalid is-selected"</span>&gt;
   &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__name"</span>&gt;dan.eden@&lt;/span&gt;
   &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token__delete"</span>&gt;&amp;times;&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--pending c-token--is-selected"</span>&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-token c-token--pending is-selected"</span>&gt;
   &lt;figure <span class="nv">class</span><span class="o">=</span><span class="s2">"c-avatar c-avatar--xs"</span>&gt;
     &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"http://i.imgur.com/3DzNLJQ.jpg"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"Ryhan Hassan"</span> /&gt;
   &lt;/figure&gt;
