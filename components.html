@@ -750,6 +750,151 @@
   &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 </div></div>
+</section>
+
+<section id="calendar" class="sc-def">
+  <header class="sc-def__header">
+    <h2>Calendar</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/daneden/scooter/tree/master/scss/components/_calendar.scss'>View on GitHub</a>
+  </header>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-calendar  u-l-spit">
+    <nav class="c-calendar__nav  u-cf u-font-center u-l-p--hlf">
+      <div class="u-l-fl">
+        <a title="Previous month" href="#" class="u-thide  c-arrow c-arrow--left">Previous</a>
+      </div>
+      <div class="u-l-fr">
+        <a title="Next month" href="#" class="u-thide  c-arrow c-arrow--right">Next</a>
+      </div>
+      <strong>September 2015</strong>
+    </nav>
+    <table class="c-calendar__picker">
+      <tr>
+        <th class="c-calendar__header">Sun</th>
+        <th class="c-calendar__header">Mon</th>
+        <th class="c-calendar__header">Tue</th>
+        <th class="c-calendar__header">Wed</th>
+        <th class="c-calendar__header">Thu</th>
+        <th class="c-calendar__header">Fri</th>
+        <th class="c-calendar__header">Sat</th>
+      </tr>
+      <tr>
+        <td class="c-calendar__date c-calendar__date--disabled">30</td>
+        <td class="c-calendar__date c-calendar__date--disabled">31</td>
+        <td class="c-calendar__date">1</td>
+        <td class="c-calendar__date">2</td>
+        <td class="c-calendar__date">3</td>
+        <td class="c-calendar__date">4</td>
+        <td class="c-calendar__date">5</td>
+      </tr>
+      <tr>
+        <td class="c-calendar__date">6</td>
+        <td class="c-calendar__date">7</td>
+        <td class="c-calendar__date">8</td>
+        <td class="c-calendar__date">9</td>
+        <td class="c-calendar__date">10</td>
+        <td class="c-calendar__date">11</td>
+        <td class="c-calendar__date">12</td>
+      </tr>
+      <tr>
+        <td class="c-calendar__date">13</td>
+        <td class="c-calendar__date">14</td>
+        <td class="c-calendar__date">15</td>
+        <td class="c-calendar__date">16</td>
+        <td class="c-calendar__date">17</td>
+        <td class="c-calendar__date">18</td>
+        <td class="c-calendar__date">19</td>
+      </tr>
+      <tr>
+        <td class="c-calendar__date">20</td>
+        <td class="c-calendar__date">21</td>
+        <td class="c-calendar__date is-selected">22</td>
+        <td class="c-calendar__date is-in-range">23</td>
+        <td class="c-calendar__date is-in-range">24</td>
+        <td class="c-calendar__date is-in-range">25</td>
+        <td class="c-calendar__date is-in-range">26</td>
+      </tr>
+      <tr>
+        <td class="c-calendar__date is-in-range">27</td>
+        <td class="c-calendar__date is-selected">28</td>
+        <td class="c-calendar__date">29</td>
+        <td class="c-calendar__date">30</td>
+        <td class="c-calendar__date c-calendar__date--disabled">1</td>
+        <td class="c-calendar__date c-calendar__date--disabled">2</td>
+        <td class="c-calendar__date c-calendar__date--disabled">3</td>
+      </tr>
+    </table>
+
+  </div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar  u-l-spit"</span>&gt;
+    &lt;nav <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__nav  u-cf u-font-center u-l-p--hlf"</span>&gt;
+      &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-fl"</span>&gt;
+        &lt;a <span class="nv">title</span><span class="o">=</span><span class="s2">"Previous month"</span> <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"u-thide  c-arrow c-arrow--left"</span>&gt;Previous&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-fr"</span>&gt;
+        &lt;a <span class="nv">title</span><span class="o">=</span><span class="s2">"Next month"</span> <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"u-thide  c-arrow c-arrow--right"</span>&gt;Next&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;strong&gt;September 2015&lt;/strong&gt;
+    &lt;/nav&gt;
+    &lt;table <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__picker"</span>&gt;
+      &lt;tr&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Sun&lt;/th&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Mon&lt;/th&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Tue&lt;/th&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Wed&lt;/th&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Thu&lt;/th&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Fri&lt;/th&gt;
+        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Sat&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;30&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;31&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;1&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;2&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;3&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;4&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;6&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;7&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;8&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;9&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;10&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;11&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;12&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;13&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;14&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;15&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;16&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;17&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;18&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;19&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;20&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;21&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-selected"</span>&gt;22&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;23&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;24&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;25&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;26&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;27&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-selected"</span>&gt;28&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;29&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;30&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;1&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;2&lt;/td&gt;
+        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+
+  &lt;/div&gt;</code></pre>
+</div></div>
+</section>
 
           </div>
 
@@ -767,6 +912,7 @@
                     <li><a href="#tokens">Tokens</a></li>
                     <li><a href="#loading-indicator">Loading-indicator</a></li>
                     <li><a href="#tab-nav">Tab-nav</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
                 </ul>
               </nav>
           </div>
