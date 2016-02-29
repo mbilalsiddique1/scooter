@@ -758,7 +758,7 @@
     <a class='ext-link sc-u-font-meta' href='https://github.com/dropbox/scooter/tree/master/scss/components/_calendar.scss'>View on GitHub</a>
   </header>
 
-  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-calendar  u-l-spit">
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-calendar c-card u-l-spit">
     <nav class="c-calendar__nav  u-cf u-font-center u-l-p--hlf">
       <div class="u-l-fl">
         <a title="Previous month" href="#" class="u-thide  c-arrow c-arrow--left">Previous</a>
@@ -768,64 +768,69 @@
       </div>
       <strong>September 2015</strong>
     </nav>
+
     <table class="c-calendar__picker">
-      <tr>
-        <th class="c-calendar__header">Sun</th>
-        <th class="c-calendar__header">Mon</th>
-        <th class="c-calendar__header">Tue</th>
-        <th class="c-calendar__header">Wed</th>
-        <th class="c-calendar__header">Thu</th>
-        <th class="c-calendar__header">Fri</th>
-        <th class="c-calendar__header">Sat</th>
-      </tr>
-      <tr>
-        <td class="c-calendar__date c-calendar__date--disabled">30</td>
-        <td class="c-calendar__date c-calendar__date--disabled">31</td>
-        <td class="c-calendar__date">1</td>
-        <td class="c-calendar__date">2</td>
-        <td class="c-calendar__date">3</td>
-        <td class="c-calendar__date">4</td>
-        <td class="c-calendar__date">5</td>
-      </tr>
-      <tr>
-        <td class="c-calendar__date">6</td>
-        <td class="c-calendar__date">7</td>
-        <td class="c-calendar__date">8</td>
-        <td class="c-calendar__date">9</td>
-        <td class="c-calendar__date">10</td>
-        <td class="c-calendar__date">11</td>
-        <td class="c-calendar__date">12</td>
-      </tr>
-      <tr>
-        <td class="c-calendar__date">13</td>
-        <td class="c-calendar__date">14</td>
-        <td class="c-calendar__date">15</td>
-        <td class="c-calendar__date">16</td>
-        <td class="c-calendar__date">17</td>
-        <td class="c-calendar__date">18</td>
-        <td class="c-calendar__date">19</td>
-      </tr>
-      <tr>
-        <td class="c-calendar__date">20</td>
-        <td class="c-calendar__date">21</td>
-        <td class="c-calendar__date is-selected">22</td>
-        <td class="c-calendar__date is-in-range">23</td>
-        <td class="c-calendar__date is-in-range">24</td>
-        <td class="c-calendar__date is-in-range">25</td>
-        <td class="c-calendar__date is-in-range">26</td>
-      </tr>
-      <tr>
-        <td class="c-calendar__date is-in-range">27</td>
-        <td class="c-calendar__date is-selected">28</td>
-        <td class="c-calendar__date">29</td>
-        <td class="c-calendar__date">30</td>
-        <td class="c-calendar__date c-calendar__date--disabled">1</td>
-        <td class="c-calendar__date c-calendar__date--disabled">2</td>
-        <td class="c-calendar__date c-calendar__date--disabled">3</td>
-      </tr>
+      <thead class="ax-visually-hidden">
+        <tr>
+          <th><abbr title="Sunday">Sun</abbr></th>
+          <th><abbr title="Monday">Mon</abbr></th>
+          <th><abbr title="Tuesday">Tue</abbr></th>
+          <th><abbr title="Wednesday">Wed</abbr></th>
+          <th><abbr title="Thursday">Thu</abbr></th>
+          <th><abbr title="Friday">Fri</abbr></th>
+          <th><abbr title="Saturday">Sat</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button class="c-calendar__date c-calendar__date--disabled" disabled="">28</button></td>
+          <td><button class="c-calendar__date c-calendar__date--disabled" disabled="">29</button></td>
+          <td><button class="c-calendar__date u-unbutton">1</button></td>
+          <td><button class="c-calendar__date u-unbutton">2</button></td>
+          <td><button class="c-calendar__date u-unbutton">3</button></td>
+          <td><button class="c-calendar__date u-unbutton">4</button></td>
+          <td><button class="c-calendar__date u-unbutton">5</button></td>
+        </tr>
+        <tr>
+          <td><button class="c-calendar__date u-unbutton">6</button></td>
+          <td><button class="c-calendar__date is-selected u-unbutton">7</button></td>
+          <td><button class="c-calendar__date u-unbutton">8</button></td>
+          <td><button class="c-calendar__date u-unbutton">9</button></td>
+          <td><button class="c-calendar__date u-unbutton">10</button></td>
+          <td><button class="c-calendar__date u-unbutton">11</button></td>
+          <td><button class="c-calendar__date u-unbutton">12</button></td>
+        </tr>
+        <tr>
+          <td><button class="c-calendar__date u-unbutton">13</button></td>
+          <td><button class="c-calendar__date u-unbutton">14</button></td>
+          <td><button class="c-calendar__date u-unbutton">15</button></td>
+          <td><button class="c-calendar__date u-unbutton">16</button></td>
+          <td><button class="c-calendar__date u-unbutton">17</button></td>
+          <td><button class="c-calendar__date u-unbutton">18</button></td>
+          <td><button class="c-calendar__date u-unbutton">19</button></td>
+        </tr>
+        <tr>
+          <td><button class="c-calendar__date u-unbutton">20</button></td>
+          <td><button class="c-calendar__date u-unbutton">21</button></td>
+          <td><button class="c-calendar__date u-unbutton">22</button></td>
+          <td><button class="c-calendar__date u-unbutton">23</button></td>
+          <td><button class="c-calendar__date u-unbutton">24</button></td>
+          <td><button class="c-calendar__date u-unbutton">25</button></td>
+          <td><button class="c-calendar__date u-unbutton">26</button></td>
+        </tr>
+        <tr>
+          <td><button class="c-calendar__date u-unbutton">27</button></td>
+          <td><button class="c-calendar__date u-unbutton">28</button></td>
+          <td><button class="c-calendar__date u-unbutton">29</button></td>
+          <td><button class="c-calendar__date u-unbutton">30</button></td>
+          <td><button class="c-calendar__date u-unbutton">31</button></td>
+          <td><button class="c-calendar__date c-calendar__date--disabled" disabled="">1</button></td>
+          <td><button class="c-calendar__date c-calendar__date--disabled" disabled="">2</button></td>
+        </tr>
+      </tbody>
     </table>
 
-  </div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar  u-l-spit"</span>&gt;
+  </div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar c-card u-l-spit"</span>&gt;
     &lt;nav <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__nav  u-cf u-font-center u-l-p--hlf"</span>&gt;
       &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-fl"</span>&gt;
         &lt;a <span class="nv">title</span><span class="o">=</span><span class="s2">"Previous month"</span> <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"u-thide  c-arrow c-arrow--left"</span>&gt;Previous&lt;/a&gt;
@@ -835,61 +840,66 @@
       &lt;/div&gt;
       &lt;strong&gt;September 2015&lt;/strong&gt;
     &lt;/nav&gt;
+
     &lt;table <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__picker"</span>&gt;
-      &lt;tr&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Sun&lt;/th&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Mon&lt;/th&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Tue&lt;/th&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Wed&lt;/th&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Thu&lt;/th&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Fri&lt;/th&gt;
-        &lt;th <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__header"</span>&gt;Sat&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;30&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;31&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;1&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;2&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;3&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;4&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;5&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;6&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;7&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;8&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;9&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;10&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;11&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;12&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;13&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;14&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;15&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;16&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;17&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;18&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;19&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;20&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;21&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-selected"</span>&gt;22&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;23&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;24&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;25&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;26&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-in-range"</span>&gt;27&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-selected"</span>&gt;28&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;29&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date"</span>&gt;30&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;1&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;2&lt;/td&gt;
-        &lt;td <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span>&gt;3&lt;/td&gt;
-      &lt;/tr&gt;
+      &lt;thead <span class="nv">class</span><span class="o">=</span><span class="s2">"ax-visually-hidden"</span>&gt;
+        &lt;tr&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Sunday"</span>&gt;Sun&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Monday"</span>&gt;Mon&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Tuesday"</span>&gt;Tue&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Wednesday"</span>&gt;Wed&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Thursday"</span>&gt;Thu&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Friday"</span>&gt;Fri&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">"Saturday"</span>&gt;Sat&lt;/abbr&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span> <span class="nv">disabled</span><span class="o">=</span><span class="s2">""</span>&gt;28&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span> <span class="nv">disabled</span><span class="o">=</span><span class="s2">""</span>&gt;29&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;1&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;2&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;3&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;4&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;5&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;6&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date is-selected u-unbutton"</span>&gt;7&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;8&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;9&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;10&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;11&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;12&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;13&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;14&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;15&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;16&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;17&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;18&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;19&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;20&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;21&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;22&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;23&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;24&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;25&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;26&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;27&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;28&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;29&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;30&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date u-unbutton"</span>&gt;31&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span> <span class="nv">disabled</span><span class="o">=</span><span class="s2">""</span>&gt;1&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-calendar__date c-calendar__date--disabled"</span> <span class="nv">disabled</span><span class="o">=</span><span class="s2">""</span>&gt;2&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
     &lt;/table&gt;
 
   &lt;/div&gt;</code></pre>
