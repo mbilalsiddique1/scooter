@@ -72,54 +72,41 @@
     <a class='ext-link sc-u-font-meta' href='https://github.com/dropbox/scooter/tree/master/scss/helpers/_layout.scss'>View on GitHub</a>
   </header>
 
-  <h3>Padding (Islands)</h3>
-  <p>Padding helpers are known as "islands". Islands come in five types:</p>
-
-  <ul>
-    <li><strong>Islands</strong> have padding equal to the global baseline.</li>
-    <li><strong>Isles</strong> have padding half the size of the global baseline.</li>
-    <li><strong>Spits</strong> have padding half the size of <strong>isles</strong>.</li>
-    <li><strong>Countries</strong> have double the padding of <strong>islands</strong>.</li>
-    <li><strong>Continents</strong> have double the padding of <strong>countries</strong>.</li>
-  </ul>
-
-  <p>We're getting a little lost in the weeds here, so let's just look at some examples.
-  Note that the border and background color are only present for demonstration purposes.</p>
-
+  <h3>Padding</h3>
   <div class='sc-demo sc-demo--padding'><div class='sc-demo__output'><p>
-  <span class="u-l-island">This is an island</span>
+  <span class="u-pad-m">Regular padding</span>
 </p>
 <p>
-  <span class="u-l-isle">This is an isle</span>
+  <span class="u-pad-s">Small padding</span>
 </p>
 <p>
-  <span class="u-l-spit">This is a spit</span>
+  <span class="u-pad-xs">Extra-small padding</span>
 </p>
 <p>
-  <span class="u-l-country">This is a country</span>
+  <span class="u-pad-l">Large padding</span>
 </p>
 <p>
-  <span class="u-l-continent">This is a continent</span>
+  <span class="u-pad-xl">Extra-large padding</span>
 </p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;p&gt;
-  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-island"</span>&gt;This is an island&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-pad-m"</span>&gt;Regular padding&lt;/span&gt;
 &lt;/p&gt;
 &lt;p&gt;
-  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-isle"</span>&gt;This is an isle&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-pad-s"</span>&gt;Small padding&lt;/span&gt;
 &lt;/p&gt;
 &lt;p&gt;
-  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-spit"</span>&gt;This is a spit&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-pad-xs"</span>&gt;Extra-small padding&lt;/span&gt;
 &lt;/p&gt;
 &lt;p&gt;
-  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-country"</span>&gt;This is a country&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-pad-l"</span>&gt;Large padding&lt;/span&gt;
 &lt;/p&gt;
 &lt;p&gt;
-  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-continent"</span>&gt;This is a continent&lt;/span&gt;
+  &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-pad-xl"</span>&gt;Extra-large padding&lt;/span&gt;
 &lt;/p&gt;</code></pre>
 </div></div>
 
-  <p>You can also add a <code>-v</code> suffix to any island to apply only vertical padding:</p>
+  <p>You can also add a <code>vertical</code> or <code>horizontal</code> keyword to apply vertical or horizontal padding:</p>
 
-  <div class='sc-demo sc-demo--padding'><div class='sc-demo__output'><span class="u-l-island-v">This is an island</span></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-island-v"</span>&gt;This is an island&lt;/span&gt;</code></pre>
+  <div class='sc-demo sc-demo--padding'><div class='sc-demo__output'><span class="u-pad-vertical-m">Regular vertical padding</span></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"u-pad-vertical-m"</span>&gt;Regular vertical padding&lt;/span&gt;</code></pre>
 </div></div>
 
   <h3>Margins</h3>
@@ -132,31 +119,31 @@
   <p>There are also modifiers that can be appended to determine the size of the margin, ranging from extra-small
     <code>xs</code> to extra-large <code>xl</code>.</p>
 
-  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="u-l-mb">This has a margin-bottom equal to the baseline</div>
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="u-mar-bottom-m">This has a margin-bottom equal to the baseline</div>
 
 <hr/>
 
-<div class="u-l-mb-l">This has a double-height margin-bottom</div>
+<div class="u-mar-bottom-l">This has a double-height margin-bottom</div>
 
 <hr/>
 
-<div class="u-l-mb-s">This has a half-height margin-bottom</div>
+<div class="u-mar-bottom-s">This has a half-height margin-bottom</div>
 
 <hr/>
 
-<p class="u-l-trim">This paragraph has been trimmed of its margin</p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-mb"</span>&gt;This has a margin-bottom equal to the baseline&lt;/div&gt;
+<p class="u-trim-margin">This paragraph has been trimmed of its margin</p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-mar-bottom-m"</span>&gt;This has a margin-bottom equal to the baseline&lt;/div&gt;
 
 &lt;hr/&gt;
 
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-mb-l"</span>&gt;This has a double-height margin-bottom&lt;/div&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-mar-bottom-l"</span>&gt;This has a double-height margin-bottom&lt;/div&gt;
 
 &lt;hr/&gt;
 
-&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-mb-s"</span>&gt;This has a half-height margin-bottom&lt;/div&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"u-mar-bottom-s"</span>&gt;This has a half-height margin-bottom&lt;/div&gt;
 
 &lt;hr/&gt;
 
-&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-l-trim"</span>&gt;This paragraph has been trimmed of its margin&lt;/p&gt;</code></pre>
+&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"u-trim-margin"</span>&gt;This paragraph has been trimmed of its margin&lt;/p&gt;</code></pre>
 </div></div>
 
   <h3>Floats</h3>
