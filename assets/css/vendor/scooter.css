@@ -206,7 +206,7 @@ a:hover, .f-a:hover { text-decoration: underline; }
 
 .c-btn.c-btn--big { padding: 10px 26px; }
 
-.c-btn.c-btn--full { display: block; }
+.c-btn.c-btn--full { display: block; width: 100%; }
 
 .c-btn.c-btn--primary { color: white; border-color: #0071ce; background-color: #007ee5; background: -webkit-linear-gradient(#007ee5, #0071ce); background: linear-gradient(#007ee5, #0071ce); }
 

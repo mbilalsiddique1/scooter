@@ -117,7 +117,7 @@
 .sc-demo__output .c-btn:focus { box-shadow: 0 0 0 2px rgba(0, 126, 229, 0.3); outline: none; }
 .sc-demo__output .c-btn:hover { text-decoration: none; }
 .sc-demo__output .c-btn.c-btn--big { padding: 10px 26px; }
-.sc-demo__output .c-btn.c-btn--full { display: block; }
+.sc-demo__output .c-btn.c-btn--full { display: block; width: 100%; }
 .sc-demo__output .c-btn.c-btn--primary { color: white; border-color: #0071ce; background-color: #007ee5; background: -webkit-linear-gradient(#007ee5, #0071ce); background: linear-gradient(#007ee5, #0071ce); }
 .sc-demo__output .c-btn.c-btn--secondary { color: #47525d; border-color: #d0d4d9; background: white; }
 .sc-demo__output .c-btn.c-btn--tertiary { color: #007ee5; border-color: #007ee5; background-color: white; background: -webkit-linear-gradient(white, #f4faff); background: linear-gradient(white, #f4faff); }
