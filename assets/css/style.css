@@ -5,7 +5,7 @@
 
 ::selection { background-color: rgba(99, 141, 212, 0.25); }
 
-html, :root { box-sizing: border-box; font: 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; color: #3D464D; }
+html, :root { box-sizing: border-box; font: 100%/1.5 "BlinkMacSystemFont", -webkit-system, Helvetica, Arial, sans-serif; color: #3D464D; }
 
 p, ul, ol, table, form, hr, h2 { margin-bottom: 1.5rem; }
 
@@ -17,7 +17,7 @@ h2 { -webkit-font-smoothing: antialiased; font-size: 1.875rem; font-weight: 400;
 
 h3 { margin-bottom: 0.75rem; -webkit-font-smoothing: antialiased; font-size: 1.333; font-weight: 600; line-height: 1; }
 
-h4 { margin-bottom: 0.75rem; font-size: .75rem; line-height: 1; text-transform: uppercase; letter-spacing: .075em; color: #7B8994; }
+h4 { margin-bottom: 0.75rem; font-size: 1rem; font-weight: 500; -webkit-font-feature-settings: "c2sc" 1, "smcp" 1; -moz-font-feature-settings: "c2sc" 1, "smcp" 1; font-feature-settings: "c2sc" 1, "smcp" 1; line-height: 1; letter-spacing: .075em; color: #7B8994; }
 
 a { color: inherit; }
 a:hover { color: #638dd4; }
@@ -121,10 +121,10 @@ ul, ol { padding-left: 1.5rem; }
 .sc-content__nav a { display: block; padding: 0.75rem 0; }
 .sc-content__nav li + li { border-top: 1px solid rgba(37, 40, 43, 0.1); }
 
-code { padding: 2px 4px; font-size: 13px; font-family: "Source Code Pro"; background-color: #F0F3F5; border-radius: 3px; }
+code { padding: 2px 4px; font-size: 13px; font-family: "Menlo", monospace; background-color: #F0F3F5; border-radius: 3px; }
 .highlight code { background-color: transparent; border-radius: 0; padding: 0; }
 
-pre.highlight { -webkit-font-smoothing: antialiased; padding: 0.75rem; margin-bottom: 1.5rem; overflow: auto; border: 1px solid rgba(37, 40, 43, 0.1); border-radius: 3px; }
+pre.highlight { padding: 0.75rem; margin-bottom: 1.5rem; overflow: auto; border: 1px solid rgba(37, 40, 43, 0.1); border-radius: 3px; }
 pre.highlight .c, pre.highlight .cd, pre.highlight .cm, pre.highlight .c1, pre.highlight .cs { color: #9FA8A7; }
 
 p:empty { display: none; }
