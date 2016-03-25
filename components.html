@@ -166,6 +166,33 @@
   &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-btn c-btn--secondary c-btn--big c-btn--full"</span>&gt;A big, full-width button&lt;/button&gt;
 &lt;/p&gt;</code></pre>
 </div></div>
+
+  <p>You can also create a button group for a series of buttons attached to one another:</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><div class="c-btn-group">
+  <button class="c-btn c-btn--secondary">Button</button>
+  <button class="c-btn c-btn--secondary">Button</button>
+  <button class="c-btn c-btn--secondary">Button</button>
+</div></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"c-btn-group"</span>&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-btn c-btn--secondary"</span>&gt;Button&lt;/button&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-btn c-btn--secondary"</span>&gt;Button&lt;/button&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"c-btn c-btn--secondary"</span>&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div></div>
+</section>
+
+<section class="sc-def" id="badges">
+  <header class="sc-def__header">
+    <h2>Badges</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/dropbox/scooter/tree/master/scss/components/_badges.scss'>View on GitHub</a>
+  </header>
+
+  <p>Badges are most often used as counters, such as an indication of unread notifications.
+    A badge can have a <code>top-right</code> modifier to pin it to the top-right corner of
+    its parent.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><p>Notifications <span class="c-badge">12</span></p></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;p&gt;Notifications &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"c-badge"</span>&gt;12&lt;/span&gt;&lt;/p&gt;</code></pre>
+</div></div>
 </section>
 
 <section class="sc-def" id="cards">
@@ -923,6 +950,194 @@
 </div></div>
 </section>
 
+<section class="sc-def" id="tables">
+  <header class="sc-def__header">
+    <h2>Tables</h2>
+    <a class='ext-link sc-u-font-meta' href='https://github.com/dropbox/scooter/tree/master/scss/components/_tables.scss'>View on GitHub</a>
+  </header>
+
+  <p>For basic table styling, add the <code>c-table</code> class to your tables.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><table class="c-table">
+  <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Favorite animal</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Wes O&rsquo;Haire</td>
+      <td>Elephant</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Sam Jau</td>
+      <td>Porcupine</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Zach Johnston</td>
+      <td>Red Panda</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Daina Lightfoot</td>
+      <td>Sea Otter</td>
+    </tr>
+  </tbody>
+</table></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;table <span class="nv">class</span><span class="o">=</span><span class="s2">"c-table"</span>&gt;
+  &lt;thead&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Favorite animal&lt;/th&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Wes O&amp;rsquo;Haire&lt;/td&gt;
+      &lt;td&gt;Elephant&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Sam Jau&lt;/td&gt;
+      &lt;td&gt;Porcupine&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Zach Johnston&lt;/td&gt;
+      &lt;td&gt;Red Panda&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Daina Lightfoot&lt;/td&gt;
+      &lt;td&gt;Sea Otter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div></div>
+
+  <p>Tables have two main additional modifiers/styles&mdash;<code>zebra</code> for alternating
+    striped rows, and <code>selectable</code> for hover and selected states on rows.</p>
+
+  <div class='sc-demo sc-demo--'><div class='sc-demo__output'><table class="c-table c-table--zebra">
+  <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Favorite Emoji</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Fiona Rolander</td>
+      <td>🙄</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Zach Johnston</td>
+      <td>💰</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Daina Lightfoot</td>
+      <td>🙈</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Andrew Chin</td>
+      <td>💁</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Liz Osaki</td>
+      <td>😬</td>
+    </tr>
+  </tbody>
+</table></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;table <span class="nv">class</span><span class="o">=</span><span class="s2">"c-table c-table--zebra"</span>&gt;
+  &lt;thead&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Favorite Emoji&lt;/th&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Fiona Rolander&lt;/td&gt;
+      &lt;td&gt;🙄&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Zach Johnston&lt;/td&gt;
+      &lt;td&gt;💰&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Daina Lightfoot&lt;/td&gt;
+      &lt;td&gt;🙈&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Andrew Chin&lt;/td&gt;
+      &lt;td&gt;💁&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Liz Osaki&lt;/td&gt;
+      &lt;td&gt;😬&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div></div>
+
+<div class='sc-demo sc-demo--'><div class='sc-demo__output'><table class="c-table c-table--selectable">
+  <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Favorite gif</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Fiona Rolander</td>
+      <td><a href="https://gif.daneden.me/tina_five.gif">Tina Fey giving herself a high-five</a></td>
+    </tr>
+    <tr class="is-selected">
+      <td>2</td>
+      <td>Daniel Eden</td>
+      <td><a href="https://gif.daneden.me/happy-place.gif">The happiest dog in the world</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Liz Osaki</td>
+      <td><a href="https://gif.daneden.me/excited_cloud.gif">Even rain clouds can be happy</a></td>
+    </tr>
+  </tbody>
+</table></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;table <span class="nv">class</span><span class="o">=</span><span class="s2">"c-table c-table--selectable"</span>&gt;
+  &lt;thead&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Favorite gif&lt;/th&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Fiona Rolander&lt;/td&gt;
+      &lt;td&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"https://gif.daneden.me/tina_five.gif"</span>&gt;Tina Fey giving herself a high-five&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr <span class="nv">class</span><span class="o">=</span><span class="s2">"is-selected"</span>&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Daniel Eden&lt;/td&gt;
+      &lt;td&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"https://gif.daneden.me/happy-place.gif"</span>&gt;The happiest dog <span class="k">in </span>the world&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Liz Osaki&lt;/td&gt;
+      &lt;td&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"https://gif.daneden.me/excited_cloud.gif"</span>&gt;Even rain clouds can be happy&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div></div>
+
           </div>
 
           <div class="sc-o-grid__col sc-o-grid__col--3-of-12">
@@ -931,6 +1146,7 @@
                 <ul>
                     <li><a href="#banners">Banners</a></li>
                     <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#badges">Badges</a></li>
                     <li><a href="#cards">Cards</a></li>
                     <li><a href="#inputs">Inputs</a></li>
                     <li><a href="#avatars">Avatars</a></li>
@@ -940,6 +1156,7 @@
                     <li><a href="#loading-indicator">Loading-indicator</a></li>
                     <li><a href="#tab-nav">Tab-nav</a></li>
                     <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#tables">Tables</a></li>
                 </ul>
               </nav>
           </div>

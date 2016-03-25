@@ -13,7 +13,7 @@
  *   verb [no obj.]
  *   go or leave somewhere quickly: "I'd better scoot"
  *
- */ /** Avatar component. A wrapper element with an (optional) image or the user's initials. */ /** Banner component. Used to display messages to the user, typically pinned to the top of the page. */ /** Button component */ /** Card component with optional arrow/tail */ /** Input & label components */ /** Loading indicator component */ /** Modal component */ /** Title-bubble component */ /*!
+ */ /** Avatar component. A wrapper element with an (optional) image or the user's initials. */ /** Badge component */ /** Banner component. Used to display messages to the user, typically pinned to the top of the page. */ /** Button component */ /** Card component with optional arrow/tail */ /** Input & label components */ /** Loading indicator component */ /** Modal component */ /** Title-bubble component */ /*!
  * Token components
  */ /*!
  * Typeahead component
@@ -23,7 +23,7 @@
 .sc-demo__output input[type=checkbox] { -webkit-appearance: checkbox; -moz-appearance: checkbox; appearance: checkbox; }
 .sc-demo__output input[type=radio] { -webkit-appearance: radio; -moz-appearance: radio; appearance: radio; }
 .sc-demo__output ul, .sc-demo__output ol { margin-left: 46px; }
-.sc-demo__output p { margin-bottom: 23px; }
+.sc-demo__output p, .sc-demo__output table { margin-bottom: 23px; }
 .sc-demo__output table { border-collapse: collapse; }
 .sc-demo__output html, .sc-demo__output :root { box-sizing: border-box; font: 81.25%/1.75 "Open Sans", "Helvetica Neue", Arial, sans-serif; color: #3d464d; }
 .sc-demo__output h1, .sc-demo__output .f-alpha { display: block; margin-bottom: 23px; font-size: 28px; font-weight: 200; line-height: 36px; }
@@ -148,6 +148,8 @@
   to { opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); } }
 @keyframes DBavatar-animation { from { opacity: 0; -webkit-transform: translateX(10px); transform: translateX(10px); }
   to { opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); } }
+.sc-demo__output .c-badge { box-sizing: border-box; display: inline-block; vertical-align: middle; margin: 0; padding: 1px 4px; font-size: 9px; font-weight: 700; line-height: 1.4; text-align: center; text-shadow: none; color: #ed7a6f; background: white; border: 1px solid #fcbdbd; border-radius: 3px; }
+.sc-demo__output .c-badge.c-badge--top-right { position: absolute; z-index: 1; top: -1em; left: -1em; margin-left: 100%; }
 .sc-demo__output .c-banner { padding: 12px; color: #47525d; border-bottom-width: 1px; border-bottom-style: solid; border-color: rgba(37, 40, 43, 0.1); background-color: #f7f9fa; }
 .sc-demo__output .c-banner.c-banner--success { color: #2c683f; background-color: #edfaf1; }
 .sc-demo__output .c-banner.c-banner--warning { color: #996e00; background-color: #fffdec; }
@@ -169,6 +171,11 @@
 .sc-demo__output .c-btn.c-btn--tertiary { color: #007ee5; border-color: #007ee5; background-color: white; background: -webkit-linear-gradient(white, #f4faff); background: linear-gradient(white, #f4faff); }
 .sc-demo__output .c-btn.c-btn--tertiary:hover:not(:disabled) { background: #f4faff; }
 .sc-demo__output .c-btn.c-btn--tertiary:active:not(:disabled) { background: -webkit-linear-gradient(#f4faff, #e3f1fc); background: linear-gradient(#f4faff, #e3f1fc); }
+.sc-demo__output .c-btn-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.sc-demo__output .c-btn-group .c-btn { margin: 0; border-radius: 0; }
+.sc-demo__output .c-btn-group .c-btn + .c-btn { border-left: 0; }
+.sc-demo__output .c-btn-group .c-btn:first-child { border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.sc-demo__output .c-btn-group .c-btn:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
 .sc-demo__output .c-datepicker { position: relative; box-sizing: border-box; background-color: white; }
 .sc-demo__output .c-datepicker .c-calendar { position: absolute; top: 100%; left: 0; }
 .sc-demo__output .c-calendar { display: inline-block; z-index: 1; border-radius: 5px; background-color: #f7f9fa; }
@@ -238,9 +245,9 @@
 .sc-demo__output .c-table__row--success, .sc-demo__output .c-table tr--success, .sc-demo__output .c-table__td--success, .sc-demo__output .c-table td--success { background-color: #ddf0e2; }
 .sc-demo__output .c-table__row--warning, .sc-demo__output .c-table tr--warning, .sc-demo__output .c-table__td--warning, .sc-demo__output .c-table td--warning { background-color: #fff5cc; }
 .sc-demo__output .c-table__row--error, .sc-demo__output .c-table tr--error, .sc-demo__output .c-table__td--error, .sc-demo__output .c-table td--error { background-color: #fcbdbd; }
-.sc-demo__output .c-table--zebra .c-table__row:nth-child(odd) { background-color: #f7f9fa; }
-.sc-demo__output .c-table--selectable .c-table__row:hover, .sc-demo__output .c-table--selectable .c-table__row:focus, .sc-demo__output .c-table--selectable .c-table__row.has-focus { background-color: #f4faff; }
-.sc-demo__output .c-table--selectable .c-table__row.is-selected { background-color: #cce6fa; }
+.sc-demo__output .c-table--zebra .c-table__row:nth-child(odd), .sc-demo__output .c-table--zebra tbody tr:nth-child(odd) { background-color: #f7f9fa; }
+.sc-demo__output .c-table--selectable .c-table__row:hover, .sc-demo__output .c-table--selectable .c-table__row:focus, .sc-demo__output .c-table--selectable .c-table__row.has-focus, .sc-demo__output .c-table--selectable tbody tr:hover, .sc-demo__output .c-table--selectable tbody tr:focus, .sc-demo__output .c-table--selectable tbody tr.has-focus { background-color: #f4faff; }
+.sc-demo__output .c-table--selectable .c-table__row.is-selected, .sc-demo__output .c-table--selectable tbody tr.is-selected { background-color: #cce6fa; }
 .sc-demo__output .c-title-bubble { display: inline-block; position: relative; }
 .sc-demo__output .c-title-bubble:before, .sc-demo__output .c-title-bubble:after { z-index: 500; }
 .sc-demo__output .c-title-bubble:after { content: attr(data-title); display: none; position: absolute; top: 100%; left: 50%; white-space: nowrap; margin-top: 5px; padding: 7px 9px; font-size: 11px; font-weight: 500; line-height: 1.4; color: white; border-radius: 3px; background-color: #3d464d; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; }
