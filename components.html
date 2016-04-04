@@ -797,16 +797,28 @@
   <p>The tab nav component provides a tab-style navigation with active tab states.</p>
 
   <div class='sc-demo sc-demo--'><div class='sc-demo__output'><nav>
-  <ul class="c-tab-nav">
-    <li role="tab" aria-selected="true" class="c-tab-nav__tab is-active"><button>Everything</button></li>
-    <li role="tab" aria-selected="false" class="c-tab-nav__tab"><button>Photos</button></li>
-    <li role="tab" aria-selected="false" class="c-tab-nav__tab"><button>Documents</button></li>
+  <ul class="c-tab-nav" role="tablist">
+    <li role="presentation" class="c-tab-nav__tab is-active">
+      <button role="tab" aria-selected="true" tabindex="0">Everything</button>
+    </li>
+    <li role="presentation" class="c-tab-nav__tab">
+      <button role="tab" aria-selected="false" tabindex="-1">Photos</button>
+    </li>
+    <li role="presentation" class="c-tab-nav__tab">
+      <button role="tab" aria-selected="false" tabindex="-1">Documents</button>
+    </li>
   </ul>
 </nav></div><div class='sc-demo__input'><pre class="highlight"><code>&lt;nav&gt;
-  &lt;ul <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav"</span>&gt;
-    &lt;li <span class="nv">role</span><span class="o">=</span><span class="s2">"tab"</span> aria-selected<span class="o">=</span><span class="s2">"true"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav__tab is-active"</span>&gt;&lt;button&gt;Everything&lt;/button&gt;&lt;/li&gt;
-    &lt;li <span class="nv">role</span><span class="o">=</span><span class="s2">"tab"</span> aria-selected<span class="o">=</span><span class="s2">"false"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav__tab"</span>&gt;&lt;button&gt;Photos&lt;/button&gt;&lt;/li&gt;
-    &lt;li <span class="nv">role</span><span class="o">=</span><span class="s2">"tab"</span> aria-selected<span class="o">=</span><span class="s2">"false"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav__tab"</span>&gt;&lt;button&gt;Documents&lt;/button&gt;&lt;/li&gt;
+  &lt;ul <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav"</span> <span class="nv">role</span><span class="o">=</span><span class="s2">"tablist"</span>&gt;
+    &lt;li <span class="nv">role</span><span class="o">=</span><span class="s2">"presentation"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav__tab is-active"</span>&gt;
+      &lt;button <span class="nv">role</span><span class="o">=</span><span class="s2">"tab"</span> aria-selected<span class="o">=</span><span class="s2">"true"</span> <span class="nv">tabindex</span><span class="o">=</span><span class="s2">"0"</span>&gt;Everything&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li <span class="nv">role</span><span class="o">=</span><span class="s2">"presentation"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav__tab"</span>&gt;
+      &lt;button <span class="nv">role</span><span class="o">=</span><span class="s2">"tab"</span> aria-selected<span class="o">=</span><span class="s2">"false"</span> <span class="nv">tabindex</span><span class="o">=</span><span class="s2">"-1"</span>&gt;Photos&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li <span class="nv">role</span><span class="o">=</span><span class="s2">"presentation"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"c-tab-nav__tab"</span>&gt;
+      &lt;button <span class="nv">role</span><span class="o">=</span><span class="s2">"tab"</span> aria-selected<span class="o">=</span><span class="s2">"false"</span> <span class="nv">tabindex</span><span class="o">=</span><span class="s2">"-1"</span>&gt;Documents&lt;/button&gt;
+    &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 </div></div>
