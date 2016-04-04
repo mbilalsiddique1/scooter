@@ -280,7 +280,13 @@
 .sc-demo__output .c-typeahead__result.is-invalid { cursor: default; }
 .sc-demo__output .c-typeahead__media, .sc-demo__output .c-typeahead__content { display: inline-block; vertical-align: middle; }
 .sc-demo__output .c-typeahead__media { margin-right: 12px; }
+.sc-demo__output .ax-visually-hidden { position: absolute !important; border: 0 !important; clip: rect(0, 0, 0, 0) !important; width: 1px !important; height: 1px !important; margin: -1px !important; padding: 0 !important; overflow: hidden !important; }
+.sc-demo__output .ax-focusable:focus, .sc-demo__output .ax-focusable.is-focused { box-shadow: 0 0 0 2px rgba(114, 182, 236, 0.7); outline: none; }
+.sc-demo__output .ax-focusable-inline:focus, .sc-demo__output .ax-focusable-inline.is-focused { text-decoration: underline; }
 .sc-demo__output .clearfix:after, .sc-demo__output .o-media:after { content: ""; display: table; clear: both; }
+.sc-demo__output .u-unbutton { padding: 0; background: none; border: 0; }
+.sc-demo__output .u-unbutton:focus { box-shadow: 0 0 0 2px #cce6fa; }
+.sc-demo__output .u-unbutton::-moz-focus-inner { border: 0; padding: 0; }
 .sc-demo__output .u-pad-xs { padding: 8px; }
 .sc-demo__output .u-mar-xs { margin: 8px; }
 .sc-demo__output .u-pad-top-xs { padding-top: 8px; }
@@ -374,9 +380,6 @@
 .sc-demo__output .u-font-nowrap { white-space: nowrap; }
 .sc-demo__output .u-thide { overflow: hidden; white-space: nowrap; text-indent: 100%; }
 .sc-demo__output .u-ellip { max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.sc-demo__output .u-unbutton { padding: 0; background: none; border: 0; }
-.sc-demo__output .u-unbutton:focus { box-shadow: 0 0 0 2px #cce6fa; }
-.sc-demo__output .u-unbutton::-moz-focus-inner { border: 0; padding: 0; }
 
 .sc-demo--grid .o-grid__col { background-color: rgba(255, 187, 1, 0.3); background-clip: content-box; height: 20px; margin-bottom: 20px; }
 
