@@ -232,12 +232,11 @@
 .sc-demo__output .c-modal--unibody .c-modal__content { background-color: white; }
 .sc-demo__output .c-modal__banner { box-shadow: inset 0 1px 0 rgba(37, 40, 43, 0.1); }
 .sc-demo__output .c-tab-nav { margin-left: 0; padding-left: 0; list-style: none; border-bottom: 1px solid rgba(61, 70, 77, 0.1); }
-.sc-demo__output .c-tab-nav__tab { display: inline-block; margin-bottom: -1px; color: #7b8994; border-bottom: 1px solid transparent; -webkit-transition: 0.2s; transition: 0.2s; }
-.sc-demo__output .c-tab-nav__tab:hover { color: #3d464d; border-bottom-color: rgba(61, 70, 77, 0.3); }
+.sc-demo__output .c-tab-nav__tab { display: inline-block; margin-bottom: -1px; color: #7b8994; }
 .sc-demo__output .c-tab-nav__tab + .c-tab-nav__tab { margin-left: 16px; }
-.sc-demo__output .c-tab-nav__tab a { display: inline-block; padding-bottom: 8px; color: inherit; }
-.sc-demo__output .c-tab-nav__tab a:hover { text-decoration: none; }
-.sc-demo__output .c-tab-nav__tab.c-tab-nav__tab--is-active { font-weight: 600; color: #3d464d; border-bottom-color: currentColor; }
+.sc-demo__output .c-tab-nav__tab a, .sc-demo__output .c-tab-nav__tab button { display: inline-block; padding: 0; padding-bottom: 8px; border: 0; border-bottom: 1px solid transparent; -webkit-transition: 0.2s; transition: 0.2s; background-color: transparent; color: inherit; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; }
+.sc-demo__output .c-tab-nav__tab a:hover, .sc-demo__output .c-tab-nav__tab a:focus, .sc-demo__output .c-tab-nav__tab button:hover, .sc-demo__output .c-tab-nav__tab button:focus { text-decoration: none; outline: 0; color: #3d464d; border-bottom-color: currentColor; }
+.sc-demo__output .c-tab-nav__tab.is-active a, .sc-demo__output .c-tab-nav__tab.is-active button { font-weight: 600; color: #3d464d; border-bottom-color: currentColor; }
 .sc-demo__output .c-table { display: table; width: 100%; text-align: left; }
 .sc-demo__output .c-table__th, .sc-demo__output .c-table th, .sc-demo__output .c-table__td, .sc-demo__output .c-table td { padding-top: 11.5px; padding-bottom: 11.5px; padding-left: 5.75px; padding-right: 5.75px; }
 .sc-demo__output .c-table__th, .sc-demo__output .c-table th { font-weight: 400; color: #737373; border-bottom: 2px solid #d0d4d9; }
