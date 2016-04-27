@@ -134,6 +134,19 @@ a:hover, .f-a:hover { text-decoration: underline; }
 
 .o-grid--nowhitespace .o-grid__col, [data-reactid] .o-grid__col { margin-right: 0; }
 
+@media (max-width: 750px) { .o-grid--responsive .o-grid__col { display: block; margin-left: 0; margin-right: 0; width: auto; } }
+@media (max-width: 750px) and (min-width: 550px) { .o-grid--responsive .o-grid__col[class*="o-grid__col--m-"] { display: inline-block; margin-right: -0.24em; }
+  .o-grid--responsive .o-grid__col.o-grid__col--m-1-of-2, .o-grid--responsive .o-grid__col.o-grid__col--m-2-of-4 { width: 50%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--m-1-of-3 { width: 33.33333%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--m-2-of-3 { width: 66.66667%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--m-1-of-4 { width: 25%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--m-3-of-4 { width: 75%; } }
+@media (max-width: 550px) { .o-grid--responsive .o-grid__col[class*="o-grid__col--s-"] { display: inline-block; margin-right: -0.24em; }
+  .o-grid--responsive .o-grid__col.o-grid__col--s-1-of-2, .o-grid--responsive .o-grid__col.o-grid__col--s-2-of-4 { width: 50%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--s-1-of-3 { width: 33.33333%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--s-2-of-3 { width: 66.66667%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--s-1-of-4 { width: 25%; }
+  .o-grid--responsive .o-grid__col.o-grid__col--s-3-of-4 { width: 75%; } }
 .o-grid__col--centered { display: block; margin-left: auto; margin-right: auto; }
 
 .o-grid__col--d-first { float: left; }
@@ -482,6 +495,8 @@ select.c-input { background-image: url("../images/icon-form-dropdown.svg"); back
 
 .c-title-bubble:before { content: ""; display: none; position: absolute; top: 100%; left: 50%; margin-top: -5px; margin-left: -5px; border: 5px solid transparent; border-bottom-color: #3d464d; }
 
+.c-title-bubble--respect-line-break:after { white-space: pre-line; }
+
 .c-title-bubble--n:after { top: auto; bottom: 100%; margin-bottom: 5px; }
 
 .c-title-bubble--n:before { top: auto; bottom: 100%; margin-bottom: -5px; border-top-color: #3d464d; border-bottom-color: transparent; }
@@ -557,6 +572,10 @@ select.c-input { background-image: url("../images/icon-form-dropdown.svg"); back
 .u-unbutton:focus { box-shadow: 0 0 0 2px #cce6fa; }
 
 .u-unbutton::-moz-focus-inner { border: 0; padding: 0; }
+
+.u-trim-margin { margin: 0 !important; }
+
+.u-trim-padding { padding: 0 !important; }
 
 .u-pad-xxs { padding: 4px !important; }
 
@@ -726,9 +745,61 @@ select.c-input { background-image: url("../images/icon-form-dropdown.svg"); back
 
 .u-mar-horizontal-xl { margin-left: 64px !important; margin-right: 64px !important; }
 
-.u-trim-margin { margin: 0 !important; }
+.u-pad-xxl { padding: 96px !important; }
 
-.u-trim-padding { padding: 0 !important; }
+.u-mar-xxl { margin: 96px !important; }
+
+.u-pad-top-xxl { padding-top: 96px !important; }
+
+.u-mar-top-xxl { margin-top: 96px !important; }
+
+.u-pad-right-xxl { padding-right: 96px !important; }
+
+.u-mar-right-xxl { margin-right: 96px !important; }
+
+.u-pad-bottom-xxl { padding-bottom: 96px !important; }
+
+.u-mar-bottom-xxl { margin-bottom: 96px !important; }
+
+.u-pad-left-xxl { padding-left: 96px !important; }
+
+.u-mar-left-xxl { margin-left: 96px !important; }
+
+.u-pad-vertical-xxl { padding-top: 96px !important; padding-bottom: 96px !important; }
+
+.u-mar-vertical-xxl { margin-top: 96px !important; margin-bottom: 96px !important; }
+
+.u-pad-horizontal-xxl { padding-left: 96px !important; padding-right: 96px !important; }
+
+.u-mar-horizontal-xxl { margin-left: 96px !important; margin-right: 96px !important; }
+
+.u-pad-jumbo { padding: 128px !important; }
+
+.u-mar-jumbo { margin: 128px !important; }
+
+.u-pad-top-jumbo { padding-top: 128px !important; }
+
+.u-mar-top-jumbo { margin-top: 128px !important; }
+
+.u-pad-right-jumbo { padding-right: 128px !important; }
+
+.u-mar-right-jumbo { margin-right: 128px !important; }
+
+.u-pad-bottom-jumbo { padding-bottom: 128px !important; }
+
+.u-mar-bottom-jumbo { margin-bottom: 128px !important; }
+
+.u-pad-left-jumbo { padding-left: 128px !important; }
+
+.u-mar-left-jumbo { margin-left: 128px !important; }
+
+.u-pad-vertical-jumbo { padding-top: 128px !important; padding-bottom: 128px !important; }
+
+.u-mar-vertical-jumbo { margin-top: 128px !important; margin-bottom: 128px !important; }
+
+.u-pad-horizontal-jumbo { padding-left: 128px !important; padding-right: 128px !important; }
+
+.u-mar-horizontal-jumbo { margin-left: 128px !important; margin-right: 128px !important; }
 
 .u-l-fl { float: left !important; }
 
